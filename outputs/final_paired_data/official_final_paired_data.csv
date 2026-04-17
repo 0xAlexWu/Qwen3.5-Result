@@ -1,0 +1,1133 @@
+dataset,pair_id,candidate_id,seed_id,canonical_seed_id,source_origin,source_file,resource_type,input_style,input_text,target_fhir_json,target_seed_file,review_status,notes,final_status,final_decision,final_notes,source_status
+official,official-pair-001,,official-pilot12-01,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Patient,concise_clinical,Active patient record for ALBERT BROOKS with identifier AB60001.,"{
+  ""active"": true,
+  ""id"": ""ihe-pcd"",
+  ""identifier"": [
+    {
+      ""type"": {
+        ""text"": ""Internal Identifier""
+      },
+      ""value"": ""AB60001""
+    }
+  ],
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""name"": [
+    {
+      ""family"": ""BROOKS"",
+      ""given"": [
+        ""ALBERT""
+      ]
+    }
+  ],
+  ""resourceType"": ""Patient"",
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Albert Brooks, Id: AB60001</div>"",
+    ""status"": ""generated""
+  }
+}",data/raw/Patient/patient-example-ihe-pcd.json,ready_for_review,Seed is sparse; only explicit identity fields were used.,unreviewed_clean_candidate,,,
+official,official-pair-002,,official-pilot12-01,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Patient,semi_structured,Patient name: ALBERT BROOKS | Identifier: AB60001 | Active: true,"{
+  ""active"": true,
+  ""id"": ""ihe-pcd"",
+  ""identifier"": [
+    {
+      ""type"": {
+        ""text"": ""Internal Identifier""
+      },
+      ""value"": ""AB60001""
+    }
+  ],
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""name"": [
+    {
+      ""family"": ""BROOKS"",
+      ""given"": [
+        ""ALBERT""
+      ]
+    }
+  ],
+  ""resourceType"": ""Patient"",
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Albert Brooks, Id: AB60001</div>"",
+    ""status"": ""generated""
+  }
+}",data/raw/Patient/patient-example-ihe-pcd.json,ready_for_review,Seed is sparse; no gender or birth date was stated in the seed.,unreviewed_clean_candidate,,,
+official,official-pair-003,,official-pilot12-02,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Patient,concise_clinical,Active female patient born 1966-04-04 with identifier 999999999.,"{
+  ""active"": true,
+  ""birthDate"": ""1966-04-04"",
+  ""deceasedBoolean"": false,
+  ""gender"": ""female"",
+  ""id"": ""proband"",
+  ""identifier"": [
+    {
+      ""assigner"": {
+        ""display"": ""Boston Massachesetts General Hospital""
+      },
+      ""system"": ""urn:oid:2.16.840.1.113883.6.117"",
+      ""type"": {
+        ""text"": ""Computer-Stored Abulatory Records (COSTAR)""
+      },
+      ""use"": ""usual"",
+      ""value"": ""999999999""
+    }
+  ],
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Patient"",
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">\n\n      <p>\n\n        <b>Annie Proband</b>: Female, born 1966-04-04\n      </p>\n\n    </div>"",
+    ""status"": ""generated""
+  }
+}",data/raw/Patient/patient-example-proband.json,ready_for_review,"No patient name is present in the seed, so the variant is limited to explicit demographics and identifier.",exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-004,,official-pilot12-02,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Patient,semi_structured,Patient record | Gender: female | Birth date: 1966-04-04 | Identifier: 999999999 | Active: true,"{
+  ""active"": true,
+  ""birthDate"": ""1966-04-04"",
+  ""deceasedBoolean"": false,
+  ""gender"": ""female"",
+  ""id"": ""proband"",
+  ""identifier"": [
+    {
+      ""assigner"": {
+        ""display"": ""Boston Massachesetts General Hospital""
+      },
+      ""system"": ""urn:oid:2.16.840.1.113883.6.117"",
+      ""type"": {
+        ""text"": ""Computer-Stored Abulatory Records (COSTAR)""
+      },
+      ""use"": ""usual"",
+      ""value"": ""999999999""
+    }
+  ],
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Patient"",
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">\n\n      <p>\n\n        <b>Annie Proband</b>: Female, born 1966-04-04\n      </p>\n\n    </div>"",
+    ""status"": ""generated""
+  }
+}",data/raw/Patient/patient-example-proband.json,needs_manual_review,"No patient name is present in the seed, so the variant remains demographic-only.",exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-005,,official-pilot12-03,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Patient,concise_clinical,Male patient with birth date 2017-09-05.,"{
+  ""_birthDate"": {
+    ""extension"": [
+      {
+        ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthTime"",
+        ""valueDateTime"": ""2017-05-09T17:11:00+01:00""
+      }
+    ]
+  },
+  ""birthDate"": ""2017-09-05"",
+  ""extension"": [
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Everywoman""
+    }
+  ],
+  ""gender"": ""male"",
+  ""id"": ""newborn"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""multipleBirthInteger"": 2,
+  ""resourceType"": ""Patient"",
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: newborn</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 05/09/2017</p><p><b>multipleBirth</b>: 2</p></div>"",
+    ""status"": ""generated""
+  }
+}",data/raw/Patient/patient-example-newborn.json,ready_for_review,"Very sparse seed; no name, identifier, or active status was stated in the resource.",exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-006,,official-pilot12-03,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Patient,semi_structured,Patient record | Gender: male | Birth date: 2017-09-05,"{
+  ""_birthDate"": {
+    ""extension"": [
+      {
+        ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthTime"",
+        ""valueDateTime"": ""2017-05-09T17:11:00+01:00""
+      }
+    ]
+  },
+  ""birthDate"": ""2017-09-05"",
+  ""extension"": [
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Everywoman""
+    }
+  ],
+  ""gender"": ""male"",
+  ""id"": ""newborn"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""multipleBirthInteger"": 2,
+  ""resourceType"": ""Patient"",
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: newborn</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 05/09/2017</p><p><b>multipleBirth</b>: 2</p></div>"",
+    ""status"": ""generated""
+  }
+}",data/raw/Patient/patient-example-newborn.json,needs_manual_review,Very sparse seed; semi-structured variant stays close to the concise variant to preserve missingness.,exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-007,,official-pilot12-04,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Observation,concise_clinical,Final body height observation: 66.89999999999999 in.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital Signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ],
+      ""text"": ""Vital Signs""
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""8302-2"",
+        ""display"": ""Body height"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Body height""
+  },
+  ""effectiveDateTime"": ""1999-07-02"",
+  ""id"": ""body-height"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/StructureDefinition/vitalsigns""
+    ],
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: body-height</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Body height <span>(Details : {LOINC code '8302-2' = 'Body height', given as 'Body height'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 66.899999999999991 in<span> (Details: UCUM code [in_i] = 'in_i')</span></p></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""[in_i]"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""in"",
+    ""value"": 66.89999999999999
+  }
+}",data/raw/Observation/observation-example-body-height.json,needs_manual_review,Only seed-local observation facts were used; linked subject context was intentionally omitted.,exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-008,,official-pilot12-04,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Observation,semi_structured,Observation: Body height | Status: final | Value: 66.89999999999999 in | Effective date: 1999-07-02,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital Signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ],
+      ""text"": ""Vital Signs""
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""8302-2"",
+        ""display"": ""Body height"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Body height""
+  },
+  ""effectiveDateTime"": ""1999-07-02"",
+  ""id"": ""body-height"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/StructureDefinition/vitalsigns""
+    ],
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: body-height</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Body height <span>(Details : {LOINC code '8302-2' = 'Body height', given as 'Body height'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 66.899999999999991 in<span> (Details: UCUM code [in_i] = 'in_i')</span></p></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""[in_i]"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""in"",
+    ""value"": 66.89999999999999
+  }
+}",data/raw/Observation/observation-example-body-height.json,needs_manual_review,Only seed-local observation facts were used; linked subject context was intentionally omitted.,unreviewed_clean_candidate,,,
+official,official-pair-009,,official-pilot12-05,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Observation,concise_clinical,Final body temperature: 36.5 C.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital Signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ],
+      ""text"": ""Vital Signs""
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""8310-5"",
+        ""display"": ""Body temperature"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Body temperature""
+  },
+  ""effectiveDateTime"": ""1999-07-02"",
+  ""id"": ""body-temperature"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/StructureDefinition/vitalsigns""
+    ],
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: body-temperature</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Body temperature <span>(Details : {LOINC code '8310-5' = 'Body temperature', given as 'Body temperature'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 36.5 C<span> (Details: UCUM code Cel = 'Cel')</span></p></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""Cel"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""C"",
+    ""value"": 36.5
+  }
+}",data/raw/Observation/observation-example-body-temperature.json,ready_for_review,Only seed-local observation facts were used; linked subject context was intentionally omitted.,exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-010,,official-pilot12-05,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Observation,semi_structured,Observation: Body temperature | Status: final | Value: 36.5 C | Effective date: 1999-07-02,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital Signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ],
+      ""text"": ""Vital Signs""
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""8310-5"",
+        ""display"": ""Body temperature"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Body temperature""
+  },
+  ""effectiveDateTime"": ""1999-07-02"",
+  ""id"": ""body-temperature"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/StructureDefinition/vitalsigns""
+    ],
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: body-temperature</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Body temperature <span>(Details : {LOINC code '8310-5' = 'Body temperature', given as 'Body temperature'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 36.5 C<span> (Details: UCUM code Cel = 'Cel')</span></p></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""Cel"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""C"",
+    ""value"": 36.5
+  }
+}",data/raw/Observation/observation-example-body-temperature.json,ready_for_review,Only seed-local observation facts were used; linked subject context was intentionally omitted.,unreviewed_clean_candidate,,,
+official,official-pair-011,,official-pilot12-06,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Observation,concise_clinical,Final heart rate: 44 beats/minute.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital Signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ],
+      ""text"": ""Vital Signs""
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""8867-4"",
+        ""display"": ""Heart rate"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Heart rate""
+  },
+  ""effectiveDateTime"": ""1999-07-02"",
+  ""id"": ""heart-rate"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/StructureDefinition/vitalsigns""
+    ],
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: heart-rate</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Heart rate <span>(Details : {LOINC code '8867-4' = 'Heart rate', given as 'Heart rate'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 44 beats/minute<span> (Details: UCUM code /min = '/min')</span></p></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""/min"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""beats/minute"",
+    ""value"": 44
+  }
+}",data/raw/Observation/observation-example-heart-rate.json,ready_for_review,Only seed-local observation facts were used; linked subject context was intentionally omitted.,exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-012,,official-pilot12-06,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Observation,semi_structured,Observation: Heart rate | Status: final | Value: 44 beats/minute | Effective date: 1999-07-02,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital Signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ],
+      ""text"": ""Vital Signs""
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""8867-4"",
+        ""display"": ""Heart rate"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Heart rate""
+  },
+  ""effectiveDateTime"": ""1999-07-02"",
+  ""id"": ""heart-rate"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/StructureDefinition/vitalsigns""
+    ],
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: heart-rate</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Heart rate <span>(Details : {LOINC code '8867-4' = 'Heart rate', given as 'Heart rate'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 44 beats/minute<span> (Details: UCUM code /min = '/min')</span></p></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""/min"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""beats/minute"",
+    ""value"": 44
+  }
+}",data/raw/Observation/observation-example-heart-rate.json,ready_for_review,Only seed-local observation facts were used; linked subject context was intentionally omitted.,unreviewed_clean_candidate,,,
+official,official-pair-013,,official-pilot12-07,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Observation,concise_clinical,Final respiratory rate: 26 breaths/minute.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital Signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ],
+      ""text"": ""Vital Signs""
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""9279-1"",
+        ""display"": ""Respiratory rate"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Respiratory rate""
+  },
+  ""effectiveDateTime"": ""1999-07-02"",
+  ""id"": ""respiratory-rate"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/StructureDefinition/vitalsigns""
+    ],
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: respiratory-rate</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Respiratory rate <span>(Details : {LOINC code '9279-1' = 'Respiratory rate', given as 'Respiratory rate'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 26 breaths/minute<span> (Details: UCUM code /min = '/min')</span></p></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""/min"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""breaths/minute"",
+    ""value"": 26
+  }
+}",data/raw/Observation/observation-example-respiratory-rate.json,ready_for_review,Only seed-local observation facts were used; linked subject context was intentionally omitted.,exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-014,,official-pilot12-07,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Observation,semi_structured,Observation: Respiratory rate | Status: final | Value: 26 breaths/minute | Effective date: 1999-07-02,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital Signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ],
+      ""text"": ""Vital Signs""
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""9279-1"",
+        ""display"": ""Respiratory rate"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Respiratory rate""
+  },
+  ""effectiveDateTime"": ""1999-07-02"",
+  ""id"": ""respiratory-rate"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/StructureDefinition/vitalsigns""
+    ],
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: respiratory-rate</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Respiratory rate <span>(Details : {LOINC code '9279-1' = 'Respiratory rate', given as 'Respiratory rate'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 26 breaths/minute<span> (Details: UCUM code /min = '/min')</span></p></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""/min"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""breaths/minute"",
+    ""value"": 26
+  }
+}",data/raw/Observation/observation-example-respiratory-rate.json,ready_for_review,Only seed-local observation facts were used; linked subject context was intentionally omitted.,unreviewed_clean_candidate,,,
+official,official-pair-015,,official-pilot12-08,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Observation,concise_clinical,Final mean blood pressure: 80 mm[Hg].,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital Signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ],
+      ""text"": ""Vital Signs""
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""8478-0"",
+        ""display"": ""Mean blood pressure"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Mean blood pressure""
+  },
+  ""effectiveDateTime"": ""1999-07-02"",
+  ""id"": ""mbp"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: mbp</p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Mean blood pressure <span>(Details : {LOINC code '8478-0' = 'Mean blood pressure', given as 'Mean blood pressure'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 80 mm[Hg]<span> (Details: UCUM code mm[Hg] = 'mmHg')</span></p></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mm[Hg]"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mm[Hg]"",
+    ""value"": 80
+  }
+}",data/raw/Observation/observation-example-mbp.json,ready_for_review,Only seed-local observation facts were used; linked subject context was intentionally omitted.,exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-016,,official-pilot12-08,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Observation,semi_structured,Observation: Mean blood pressure | Status: final | Value: 80 mm[Hg] | Effective date: 1999-07-02,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital Signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ],
+      ""text"": ""Vital Signs""
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""8478-0"",
+        ""display"": ""Mean blood pressure"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Mean blood pressure""
+  },
+  ""effectiveDateTime"": ""1999-07-02"",
+  ""id"": ""mbp"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: mbp</p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Mean blood pressure <span>(Details : {LOINC code '8478-0' = 'Mean blood pressure', given as 'Mean blood pressure'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 80 mm[Hg]<span> (Details: UCUM code mm[Hg] = 'mmHg')</span></p></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mm[Hg]"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mm[Hg]"",
+    ""value"": 80
+  }
+}",data/raw/Observation/observation-example-mbp.json,ready_for_review,Only seed-local observation facts were used; linked subject context was intentionally omitted.,unreviewed_clean_candidate,,,
+official,official-pair-019,,official-pilot12-10,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Condition,concise_clinical,Active confirmed ischemic stroke.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""422504002"",
+        ""display"": ""Ischemic stroke (disorder)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Stroke""
+  },
+  ""id"": ""stroke"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""onsetDateTime"": ""2010-07-18"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Ischemic stroke, July 18, 2010</div>"",
+    ""status"": ""generated""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",data/raw/Condition/condition-example-stroke.json,needs_manual_review,Subject reference was intentionally omitted; concise variant keeps only the core diagnosis and certainty facts.,exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-020,,official-pilot12-10,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Condition,semi_structured,Condition: Ischemic stroke (disorder) | Clinical status: active | Verification status: confirmed | Onset date: 2010-07-18,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""422504002"",
+        ""display"": ""Ischemic stroke (disorder)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Stroke""
+  },
+  ""id"": ""stroke"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""onsetDateTime"": ""2010-07-18"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Ischemic stroke, July 18, 2010</div>"",
+    ""status"": ""generated""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",data/raw/Condition/condition-example-stroke.json,ready_for_review,Subject reference was intentionally omitted.,unreviewed_clean_candidate,,,
+official,official-pair-021,,official-pilot12-11,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Condition,concise_clinical,Active confirmed burn of ear involving the left external ear structure.,"{
+  ""bodySite"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""49521004"",
+          ""display"": ""Left external ear structure"",
+          ""system"": ""http://snomed.info/sct""
+        }
+      ],
+      ""text"": ""Left Ear""
+    }
+  ],
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        },
+        {
+          ""code"": ""439401001"",
+          ""display"": ""Diagnosis"",
+          ""system"": ""http://snomed.info/sct""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""39065001"",
+        ""display"": ""Burn of ear"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Burnt Ear""
+  },
+  ""id"": ""example"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""onsetDateTime"": ""2012-05-24"",
+  ""resourceType"": ""Condition"",
+  ""severity"": {
+    ""coding"": [
+      {
+        ""code"": ""24484000"",
+        ""display"": ""Severe"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ]
+  },
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Severe burn of left ear (Date: 24-May 2012)</div>"",
+    ""status"": ""generated""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",data/raw/Condition/condition-example.json,ready_for_review,Subject reference was intentionally omitted; body site was kept because it is explicit in the seed.,exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-022,,official-pilot12-11,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Condition,semi_structured,Condition: Burn of ear | Body site: Left external ear structure | Clinical status: active | Verification status: confirmed | Onset date: 2012-05-24,"{
+  ""bodySite"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""49521004"",
+          ""display"": ""Left external ear structure"",
+          ""system"": ""http://snomed.info/sct""
+        }
+      ],
+      ""text"": ""Left Ear""
+    }
+  ],
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        },
+        {
+          ""code"": ""439401001"",
+          ""display"": ""Diagnosis"",
+          ""system"": ""http://snomed.info/sct""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""39065001"",
+        ""display"": ""Burn of ear"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Burnt Ear""
+  },
+  ""id"": ""example"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""onsetDateTime"": ""2012-05-24"",
+  ""resourceType"": ""Condition"",
+  ""severity"": {
+    ""coding"": [
+      {
+        ""code"": ""24484000"",
+        ""display"": ""Severe"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ]
+  },
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Severe burn of left ear (Date: 24-May 2012)</div>"",
+    ""status"": ""generated""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",data/raw/Condition/condition-example.json,ready_for_review,Subject reference was intentionally omitted.,exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-023,,official-pilot12-12,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Condition,concise_clinical,Active confirmed asthma.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""problem-list-item"",
+          ""display"": ""Problem List Item"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""text"": ""Asthma""
+  },
+  ""id"": ""example2"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""onsetString"": ""approximately November 2012"",
+  ""resourceType"": ""Condition"",
+  ""severity"": {
+    ""coding"": [
+      {
+        ""code"": ""255604002"",
+        ""display"": ""Mild"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ]
+  },
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Mild Asthma (Date: 12-Nov 2012)</div>"",
+    ""status"": ""generated""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",data/raw/Condition/condition-example2.json,ready_for_review,Seed is compact; no onset date or treatment detail was stated in the resource.,exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+official,official-pair-024,,official-pilot12-12,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Condition,semi_structured,Condition: Asthma | Clinical status: active | Verification status: confirmed,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""problem-list-item"",
+          ""display"": ""Problem List Item"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""text"": ""Asthma""
+  },
+  ""id"": ""example2"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""onsetString"": ""approximately November 2012"",
+  ""resourceType"": ""Condition"",
+  ""severity"": {
+    ""coding"": [
+      {
+        ""code"": ""255604002"",
+        ""display"": ""Mild"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ]
+  },
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Mild Asthma (Date: 12-Nov 2012)</div>"",
+    ""status"": ""generated""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",data/raw/Condition/condition-example2.json,ready_for_review,Seed is compact; no onset date or treatment detail was stated in the resource.,exclude_for_now,,Official policy: unresolved unsupported or leakage concerns keep this row out of training for now. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,

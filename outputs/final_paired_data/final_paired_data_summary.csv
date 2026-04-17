@@ -1,0 +1,6 @@
+dataset,total_original_pairs,use_now_count,use_after_revision_count,exclude_for_now_count,unreviewed_clean_candidate_count
+synthea,345,14,0,0,331
+official,24,0,2,14,8
+nhanes,30,14,6,0,10
+gpt_expanded,52,5,18,14,15
+mimic_eicu,14,0,0,14,0

@@ -1,0 +1,169 @@
+dataset,pair_id,candidate_id,seed_id,canonical_seed_id,source_origin,source_file,resource_type,input_style,input_text,target_fhir_json,target_seed_file,review_status,notes,final_status,final_decision,final_notes,source_status
+mimic_eicu,demo-mimic-eicu-pair-0001,eicu-obs-0001,,,eICU-CRD (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,concise_clinical,glucose 188 mg/dL,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""Glucose""
+  },
+  ""valueQuantity"": {
+    ""value"": 188,
+    ""unit"": ""mg/dL"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""mg/dL""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0002,eicu-obs-0001,,,eICU-CRD (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,semi_structured,Glucose: 188 mg/dL,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""Glucose""
+  },
+  ""valueQuantity"": {
+    ""value"": 188,
+    ""unit"": ""mg/dL"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""mg/dL""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0003,mimic-obs-0003,,,MIMIC-IV (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,concise_clinical,Na 134 mEq/L,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""Sodium""
+  },
+  ""valueQuantity"": {
+    ""value"": 134,
+    ""unit"": ""mEq/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""meq/L""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0004,mimic-obs-0003,,,MIMIC-IV (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,semi_structured,Sodium: 134 mEq/L,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""Sodium""
+  },
+  ""valueQuantity"": {
+    ""value"": 134,
+    ""unit"": ""mEq/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""meq/L""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0005,eicu-obs-0006,,,eICU-CRD (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,concise_clinical,HR 118 bpm,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""Heart Rate""
+  },
+  ""valueQuantity"": {
+    ""value"": 118,
+    ""unit"": ""bpm"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""/min""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0006,eicu-obs-0006,,,eICU-CRD (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,semi_structured,Heart Rate: 118 bpm,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""Heart Rate""
+  },
+  ""valueQuantity"": {
+    ""value"": 118,
+    ""unit"": ""bpm"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""/min""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0007,eicu-obs-0007,,,eICU-CRD (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,concise_clinical,SBP 86 mmHg,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""Systolic BP""
+  },
+  ""valueQuantity"": {
+    ""value"": 86,
+    ""unit"": ""mmHg"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""mm[Hg]""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0008,eicu-obs-0007,,,eICU-CRD (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,semi_structured,Systolic BP: 86 mmHg,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""Systolic BP""
+  },
+  ""valueQuantity"": {
+    ""value"": 86,
+    ""unit"": ""mmHg"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""mm[Hg]""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0009,eicu-obs-0009,,,eICU-CRD (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,concise_clinical,Temp 38.4 C,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""Temperature""
+  },
+  ""valueQuantity"": {
+    ""value"": 38.4,
+    ""unit"": ""C"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""Cel""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0010,eicu-obs-0009,,,eICU-CRD (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,semi_structured,Temperature: 38.4 C,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""Temperature""
+  },
+  ""valueQuantity"": {
+    ""value"": 38.4,
+    ""unit"": ""C"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""Cel""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0011,eicu-obs-0002,,,eICU-CRD (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,concise_clinical,K 5.4 mmol/L,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""Potassium""
+  },
+  ""valueQuantity"": {
+    ""value"": 5.4,
+    ""unit"": ""mmol/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""mmol/L""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0012,eicu-obs-0002,,,eICU-CRD (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,semi_structured,Potassium: 5.4 mmol/L,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""Potassium""
+  },
+  ""valueQuantity"": {
+    ""value"": 5.4,
+    ""unit"": ""mmol/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""mmol/L""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0013,eicu-obs-0010,,,eICU-CRD (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,concise_clinical,SpO2 91 %,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""SpO2""
+  },
+  ""valueQuantity"": {
+    ""value"": 91,
+    ""unit"": ""%"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""%""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent
+mimic_eicu,demo-mimic-eicu-pair-0014,eicu-obs-0010,,,eICU-CRD (demo-equivalent),upstream_repos/MIMIC-eICU-Seeds/outputs/mimic_eicu/demo_pair_pilot/demo_pair_candidates.csv,Observation,semi_structured,SpO2: 91 %,"{
+  ""resourceType"": ""Observation"",
+  ""code"": {
+    ""text"": ""SpO2""
+  },
+  ""valueQuantity"": {
+    ""value"": 91,
+    ""unit"": ""%"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""code"": ""%""
+  }
+}",,maybe_later,demo-only fallback from maybe_later Observation row; code kept text-only or minimal and subject/encounter references were omitted because the snippet does not resolve them.,exclude_for_now,keep,MIMIC/eICU policy: demo_only_low_weight_candidate at most; exclude from formal training for now. Final decision carried from merged_decision=keep.,demo_equivalent

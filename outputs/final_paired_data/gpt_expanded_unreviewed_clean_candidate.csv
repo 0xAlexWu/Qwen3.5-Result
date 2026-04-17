@@ -1,0 +1,1275 @@
+dataset,pair_id,candidate_id,seed_id,canonical_seed_id,source_origin,source_file,resource_type,input_style,input_text,target_fhir_json,target_seed_file,review_status,notes,final_status,final_decision,final_notes,source_status
+gpt_expanded,gptx-off-002__concise_clinical,,,gptx-off-002,official,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Patient,concise_clinical,"Active female patient, born 1966-04-04, identifier 999999999. Status: not deceased.","{
+  ""active"": true,
+  ""birthDate"": ""1966-04-04"",
+  ""deceasedBoolean"": false,
+  ""gender"": ""female"",
+  ""id"": ""proband"",
+  ""identifier"": [
+    {
+      ""assigner"": {
+        ""display"": ""Boston Massachesetts General Hospital""
+      },
+      ""system"": ""urn:oid:2.16.840.1.113883.6.117"",
+      ""type"": {
+        ""text"": ""Computer-Stored Abulatory Records (COSTAR)""
+      },
+      ""use"": ""usual"",
+      ""value"": ""999999999""
+    }
+  ],
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Patient"",
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">\n\n      <p>\n\n        <b>Annie Proband</b>: Female, born 1966-04-04\n      </p>\n\n    </div>"",
+    ""status"": ""generated""
+  }
+}",inputs/official/gptx-off-002__Patient__proband.json,ready_for_review,Patient expression uses only explicit structured identity/demographic fields from the canonical target and intentionally omits extra linked or non-core structured details. Imported target remains unchanged from official_pilot12 seed official-pilot12-02.,unreviewed_clean_candidate,,,
+gpt_expanded,gptx-off-005__concise_clinical,,,gptx-off-005,official,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,concise_clinical,Ischemic stroke. Clinical status: active. Verification status: confirmed. Onset: 2010-07-18.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""422504002"",
+        ""display"": ""Ischemic stroke (disorder)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Stroke""
+  },
+  ""id"": ""stroke"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""onsetDateTime"": ""2010-07-18"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Ischemic stroke, July 18, 2010</div>"",
+    ""status"": ""generated""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/official/gptx-off-005__Condition__stroke.json,ready_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from official_pilot12 seed official-pilot12-10.",unreviewed_clean_candidate,,,
+gpt_expanded,gptx-off-005__semi_structured,,,gptx-off-005,official,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,semi_structured,Condition: Ischemic stroke | Clinical status: active | Verification status: confirmed | Onset: 2010-07-18,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""422504002"",
+        ""display"": ""Ischemic stroke (disorder)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Stroke""
+  },
+  ""id"": ""stroke"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""onsetDateTime"": ""2010-07-18"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Ischemic stroke, July 18, 2010</div>"",
+    ""status"": ""generated""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/official/gptx-off-005__Condition__stroke.json,ready_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from official_pilot12 seed official-pilot12-10.",unreviewed_clean_candidate,,,
+gpt_expanded,gptx-off-006__concise_clinical,,,gptx-off-006,official,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,concise_clinical,Mild Asthma. Clinical status: active. Verification status: confirmed. Onset: approximately November 2012.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""problem-list-item"",
+          ""display"": ""Problem List Item"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""text"": ""Asthma""
+  },
+  ""id"": ""example2"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""onsetString"": ""approximately November 2012"",
+  ""resourceType"": ""Condition"",
+  ""severity"": {
+    ""coding"": [
+      {
+        ""code"": ""255604002"",
+        ""display"": ""Mild"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ]
+  },
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Mild Asthma (Date: 12-Nov 2012)</div>"",
+    ""status"": ""generated""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/official/gptx-off-006__Condition__example2.json,ready_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from official_pilot12 seed official-pilot12-12.",unreviewed_clean_candidate,,,
+gpt_expanded,gptx-syn-001__concise_clinical,,,gptx-syn-001,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Patient,concise_clinical,"male patient Richard937 Donovan745 Stark857, born 1960-01-14. Marital status: Divorced. Status: deceased on 2020-12-25T16:05:05-03:00.","{
+  ""address"": [
+    {
+      ""city"": ""Wichita"",
+      ""country"": ""US"",
+      ""extension"": [
+        {
+          ""extension"": [
+            {
+              ""url"": ""latitude"",
+              ""valueDecimal"": 37.67776745496525
+            },
+            {
+              ""url"": ""longitude"",
+              ""valueDecimal"": -97.3408569528437
+            }
+          ],
+          ""url"": ""http://hl7.org/fhir/StructureDefinition/geolocation""
+        }
+      ],
+      ""line"": [
+        ""158 Jones Manor Unit 4""
+      ],
+      ""postalCode"": ""67209"",
+      ""state"": ""KS""
+    }
+  ],
+  ""birthDate"": ""1960-01-14"",
+  ""communication"": [
+    {
+      ""language"": {
+        ""coding"": [
+          {
+            ""code"": ""en-US"",
+            ""display"": ""English (United States)"",
+            ""system"": ""urn:ietf:bcp:47""
+          }
+        ],
+        ""text"": ""English (United States)""
+      }
+    }
+  ],
+  ""deceasedDateTime"": ""2020-12-25T16:05:05-03:00"",
+  ""extension"": [
+    {
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""code"": ""2106-3"",
+            ""display"": ""White"",
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""White""
+        }
+      ],
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-race""
+    },
+    {
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""code"": ""2186-5"",
+            ""display"": ""Not Hispanic or Latino"",
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""Not Hispanic or Latino""
+        }
+      ],
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Fatima244 Schamberger479""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"",
+      ""valueCode"": ""M""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthPlace"",
+      ""valueAddress"": {
+        ""city"": ""Oxford"",
+        ""country"": ""US"",
+        ""state"": ""Kansas""
+      }
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/disability-adjusted-life-years"",
+      ""valueDecimal"": 0.48281355004586557
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/quality-adjusted-life-years"",
+      ""valueDecimal"": 58.51718644995413
+    }
+  ],
+  ""gender"": ""male"",
+  ""id"": ""035d096b-ec8a-645f-2424-4b9dd739e43a"",
+  ""identifier"": [
+    {
+      ""system"": ""https://github.com/synthetichealth/synthea"",
+      ""value"": ""035d096b-ec8a-645f-2424-4b9dd739e43a""
+    },
+    {
+      ""system"": ""http://hospital.smarthealthit.org"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""MR"",
+            ""display"": ""Medical Record Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Medical Record Number""
+      },
+      ""value"": ""035d096b-ec8a-645f-2424-4b9dd739e43a""
+    },
+    {
+      ""system"": ""http://hl7.org/fhir/sid/us-ssn"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""SS"",
+            ""display"": ""Social Security Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Social Security Number""
+      },
+      ""value"": ""999-81-2524""
+    },
+    {
+      ""system"": ""urn:oid:2.16.840.1.113883.4.3.25"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""DL"",
+            ""display"": ""Driver's license number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Driver's license number""
+      },
+      ""value"": ""S99994003""
+    },
+    {
+      ""system"": ""http://hl7.org/fhir/sid/passport-USA"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""PPN"",
+            ""display"": ""Passport Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Passport Number""
+      },
+      ""value"": ""X47336645X""
+    }
+  ],
+  ""maritalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""D"",
+        ""display"": ""Divorced"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-MaritalStatus""
+      }
+    ],
+    ""text"": ""Divorced""
+  },
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient""
+    ]
+  },
+  ""multipleBirthBoolean"": false,
+  ""name"": [
+    {
+      ""family"": ""Stark857"",
+      ""given"": [
+        ""Richard937"",
+        ""Donovan745""
+      ],
+      ""prefix"": [
+        ""Mr.""
+      ],
+      ""use"": ""official""
+    }
+  ],
+  ""resourceType"": ""Patient"",
+  ""telecom"": [
+    {
+      ""system"": ""phone"",
+      ""use"": ""home"",
+      ""value"": ""555-197-6960""
+    }
+  ],
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Generated by <a href=\""https://github.com/synthetichealth/synthea\"">Synthea</a>.Version identifier: aa0772f\n .   Person seed: 242360314082518111  Population seed: 54321</div>"",
+    ""status"": ""generated""
+  }
+}",inputs/synthea/gptx-syn-001__Patient__035d096b-ec8a-645f-2424-4b9dd739e43a.json,ready_for_review,Patient expression uses only explicit structured identity/demographic fields from the canonical target and intentionally omits extra linked or non-core structured details. Imported target remains unchanged from synthea_pilot50 seed Patient/035d096b-ec8a-645f-2424-4b9dd739e43a.,unreviewed_clean_candidate,,,
+gpt_expanded,gptx-syn-001__semi_structured,,,gptx-syn-001,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Patient,semi_structured,Patient | Name: Richard937 Donovan745 Stark857 | Gender: male | Birth date: 1960-01-14 | Marital status: Divorced | Status: deceased on 2020-12-25T16:05:05-03:00,"{
+  ""address"": [
+    {
+      ""city"": ""Wichita"",
+      ""country"": ""US"",
+      ""extension"": [
+        {
+          ""extension"": [
+            {
+              ""url"": ""latitude"",
+              ""valueDecimal"": 37.67776745496525
+            },
+            {
+              ""url"": ""longitude"",
+              ""valueDecimal"": -97.3408569528437
+            }
+          ],
+          ""url"": ""http://hl7.org/fhir/StructureDefinition/geolocation""
+        }
+      ],
+      ""line"": [
+        ""158 Jones Manor Unit 4""
+      ],
+      ""postalCode"": ""67209"",
+      ""state"": ""KS""
+    }
+  ],
+  ""birthDate"": ""1960-01-14"",
+  ""communication"": [
+    {
+      ""language"": {
+        ""coding"": [
+          {
+            ""code"": ""en-US"",
+            ""display"": ""English (United States)"",
+            ""system"": ""urn:ietf:bcp:47""
+          }
+        ],
+        ""text"": ""English (United States)""
+      }
+    }
+  ],
+  ""deceasedDateTime"": ""2020-12-25T16:05:05-03:00"",
+  ""extension"": [
+    {
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""code"": ""2106-3"",
+            ""display"": ""White"",
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""White""
+        }
+      ],
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-race""
+    },
+    {
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""code"": ""2186-5"",
+            ""display"": ""Not Hispanic or Latino"",
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""Not Hispanic or Latino""
+        }
+      ],
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Fatima244 Schamberger479""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"",
+      ""valueCode"": ""M""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthPlace"",
+      ""valueAddress"": {
+        ""city"": ""Oxford"",
+        ""country"": ""US"",
+        ""state"": ""Kansas""
+      }
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/disability-adjusted-life-years"",
+      ""valueDecimal"": 0.48281355004586557
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/quality-adjusted-life-years"",
+      ""valueDecimal"": 58.51718644995413
+    }
+  ],
+  ""gender"": ""male"",
+  ""id"": ""035d096b-ec8a-645f-2424-4b9dd739e43a"",
+  ""identifier"": [
+    {
+      ""system"": ""https://github.com/synthetichealth/synthea"",
+      ""value"": ""035d096b-ec8a-645f-2424-4b9dd739e43a""
+    },
+    {
+      ""system"": ""http://hospital.smarthealthit.org"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""MR"",
+            ""display"": ""Medical Record Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Medical Record Number""
+      },
+      ""value"": ""035d096b-ec8a-645f-2424-4b9dd739e43a""
+    },
+    {
+      ""system"": ""http://hl7.org/fhir/sid/us-ssn"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""SS"",
+            ""display"": ""Social Security Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Social Security Number""
+      },
+      ""value"": ""999-81-2524""
+    },
+    {
+      ""system"": ""urn:oid:2.16.840.1.113883.4.3.25"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""DL"",
+            ""display"": ""Driver's license number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Driver's license number""
+      },
+      ""value"": ""S99994003""
+    },
+    {
+      ""system"": ""http://hl7.org/fhir/sid/passport-USA"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""PPN"",
+            ""display"": ""Passport Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Passport Number""
+      },
+      ""value"": ""X47336645X""
+    }
+  ],
+  ""maritalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""D"",
+        ""display"": ""Divorced"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-MaritalStatus""
+      }
+    ],
+    ""text"": ""Divorced""
+  },
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient""
+    ]
+  },
+  ""multipleBirthBoolean"": false,
+  ""name"": [
+    {
+      ""family"": ""Stark857"",
+      ""given"": [
+        ""Richard937"",
+        ""Donovan745""
+      ],
+      ""prefix"": [
+        ""Mr.""
+      ],
+      ""use"": ""official""
+    }
+  ],
+  ""resourceType"": ""Patient"",
+  ""telecom"": [
+    {
+      ""system"": ""phone"",
+      ""use"": ""home"",
+      ""value"": ""555-197-6960""
+    }
+  ],
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Generated by <a href=\""https://github.com/synthetichealth/synthea\"">Synthea</a>.Version identifier: aa0772f\n .   Person seed: 242360314082518111  Population seed: 54321</div>"",
+    ""status"": ""generated""
+  }
+}",inputs/synthea/gptx-syn-001__Patient__035d096b-ec8a-645f-2424-4b9dd739e43a.json,ready_for_review,Patient expression uses only explicit structured identity/demographic fields from the canonical target and intentionally omits extra linked or non-core structured details. Imported target remains unchanged from synthea_pilot50 seed Patient/035d096b-ec8a-645f-2424-4b9dd739e43a.,unreviewed_clean_candidate,,,
+gpt_expanded,gptx-syn-003__semi_structured,,,gptx-syn-003,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Patient,semi_structured,Patient | Name: Madalyn472 Jamika47 Gottlieb798 | Gender: female | Birth date: 1950-01-26 | Marital status: Never Married | Status: deceased on 2020-07-17T06:59:08-03:00,"{
+  ""address"": [
+    {
+      ""city"": ""Great Bend"",
+      ""country"": ""US"",
+      ""extension"": [
+        {
+          ""extension"": [
+            {
+              ""url"": ""latitude"",
+              ""valueDecimal"": 38.41718672181192
+            },
+            {
+              ""url"": ""longitude"",
+              ""valueDecimal"": -98.69352982570909
+            }
+          ],
+          ""url"": ""http://hl7.org/fhir/StructureDefinition/geolocation""
+        }
+      ],
+      ""line"": [
+        ""1085 Kuvalis Frontage road Unit 94""
+      ],
+      ""postalCode"": ""67530"",
+      ""state"": ""KS""
+    }
+  ],
+  ""birthDate"": ""1950-01-26"",
+  ""communication"": [
+    {
+      ""language"": {
+        ""coding"": [
+          {
+            ""code"": ""en-US"",
+            ""display"": ""English (United States)"",
+            ""system"": ""urn:ietf:bcp:47""
+          }
+        ],
+        ""text"": ""English (United States)""
+      }
+    }
+  ],
+  ""deceasedDateTime"": ""2020-07-17T06:59:08-03:00"",
+  ""extension"": [
+    {
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""code"": ""2106-3"",
+            ""display"": ""White"",
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""White""
+        }
+      ],
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-race""
+    },
+    {
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""code"": ""2186-5"",
+            ""display"": ""Not Hispanic or Latino"",
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""Not Hispanic or Latino""
+        }
+      ],
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Kathaleen265 Watsica258""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"",
+      ""valueCode"": ""F""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthPlace"",
+      ""valueAddress"": {
+        ""city"": ""Wichita"",
+        ""country"": ""US"",
+        ""state"": ""Kansas""
+      }
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/disability-adjusted-life-years"",
+      ""valueDecimal"": 5.592692030739384
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/quality-adjusted-life-years"",
+      ""valueDecimal"": 63.407307969260614
+    }
+  ],
+  ""gender"": ""female"",
+  ""id"": ""01e8022f-bd3e-b493-9190-3e87e8f94023"",
+  ""identifier"": [
+    {
+      ""system"": ""https://github.com/synthetichealth/synthea"",
+      ""value"": ""01e8022f-bd3e-b493-9190-3e87e8f94023""
+    },
+    {
+      ""system"": ""http://hospital.smarthealthit.org"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""MR"",
+            ""display"": ""Medical Record Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Medical Record Number""
+      },
+      ""value"": ""01e8022f-bd3e-b493-9190-3e87e8f94023""
+    },
+    {
+      ""system"": ""http://hl7.org/fhir/sid/us-ssn"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""SS"",
+            ""display"": ""Social Security Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Social Security Number""
+      },
+      ""value"": ""999-97-7866""
+    },
+    {
+      ""system"": ""urn:oid:2.16.840.1.113883.4.3.25"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""DL"",
+            ""display"": ""Driver's license number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Driver's license number""
+      },
+      ""value"": ""S99910801""
+    },
+    {
+      ""system"": ""http://hl7.org/fhir/sid/passport-USA"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""PPN"",
+            ""display"": ""Passport Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Passport Number""
+      },
+      ""value"": ""X30852945X""
+    }
+  ],
+  ""maritalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""S"",
+        ""display"": ""Never Married"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-MaritalStatus""
+      }
+    ],
+    ""text"": ""Never Married""
+  },
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient""
+    ]
+  },
+  ""multipleBirthBoolean"": false,
+  ""name"": [
+    {
+      ""family"": ""Gottlieb798"",
+      ""given"": [
+        ""Madalyn472"",
+        ""Jamika47""
+      ],
+      ""prefix"": [
+        ""Ms.""
+      ],
+      ""use"": ""official""
+    }
+  ],
+  ""resourceType"": ""Patient"",
+  ""telecom"": [
+    {
+      ""system"": ""phone"",
+      ""use"": ""home"",
+      ""value"": ""555-525-4050""
+    }
+  ],
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Generated by <a href=\""https://github.com/synthetichealth/synthea\"">Synthea</a>.Version identifier: aa0772f\n .   Person seed: 137362192696521875  Population seed: 54321</div>"",
+    ""status"": ""generated""
+  }
+}",inputs/synthea/gptx-syn-003__Patient__01e8022f-bd3e-b493-9190-3e87e8f94023.json,ready_for_review,Patient expression uses only explicit structured identity/demographic fields from the canonical target and intentionally omits extra linked or non-core structured details. Imported target remains unchanged from synthea_pilot50 seed Patient/01e8022f-bd3e-b493-9190-3e87e8f94023.,unreviewed_clean_candidate,,,
+gpt_expanded,gptx-syn-015__concise_clinical,,,gptx-syn-015,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,concise_clinical,Gingivitis. Clinical status: resolved. Verification status: confirmed. Onset: 2021-04-05T12:47:01-03:00. Abatement: 2021-04-12T15:12:13-03:00.,"{
+  ""abatementDateTime"": ""2021-04-12T15:12:13-03:00"",
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""resolved"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""66383009"",
+        ""display"": ""Gingivitis (disorder)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Gingivitis (disorder)""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/076ce495-0477-ed52-6b75-211dedaa2b58""
+  },
+  ""id"": ""076ce495-0477-ed52-8429-4a68d4e3221f"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""onsetDateTime"": ""2021-04-05T12:47:01-03:00"",
+  ""recordedDate"": ""2021-04-05T12:47:01-03:00"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/076ce495-0477-ed52-deb8-036703eb987b""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/synthea/gptx-syn-015__Condition__076ce495-0477-ed52-8429-4a68d4e3221f.json,ready_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from synthea_pilot50 seed Condition/076ce495-0477-ed52-8429-4a68d4e3221f.",unreviewed_clean_candidate,,,
+gpt_expanded,gptx-syn-015__semi_structured,,,gptx-syn-015,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,semi_structured,Condition: Gingivitis | Clinical status: resolved | Verification status: confirmed | Onset: 2021-04-05T12:47:01-03:00 | Abatement: 2021-04-12T15:12:13-03:00,"{
+  ""abatementDateTime"": ""2021-04-12T15:12:13-03:00"",
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""resolved"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""66383009"",
+        ""display"": ""Gingivitis (disorder)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Gingivitis (disorder)""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/076ce495-0477-ed52-6b75-211dedaa2b58""
+  },
+  ""id"": ""076ce495-0477-ed52-8429-4a68d4e3221f"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""onsetDateTime"": ""2021-04-05T12:47:01-03:00"",
+  ""recordedDate"": ""2021-04-05T12:47:01-03:00"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/076ce495-0477-ed52-deb8-036703eb987b""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/synthea/gptx-syn-015__Condition__076ce495-0477-ed52-8429-4a68d4e3221f.json,ready_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from synthea_pilot50 seed Condition/076ce495-0477-ed52-8429-4a68d4e3221f.",unreviewed_clean_candidate,,,
+gpt_expanded,gptx-syn-016__concise_clinical,,,gptx-syn-016,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,concise_clinical,Severe anxiety (panic). Clinical status: resolved. Verification status: confirmed. Onset: 2018-03-07T00:24:09-03:00. Abatement: 2019-03-13T00:22:23-03:00.,"{
+  ""abatementDateTime"": ""2019-03-13T00:22:23-03:00"",
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""resolved"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""80583007"",
+        ""display"": ""Severe anxiety (panic) (finding)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Severe anxiety (panic) (finding)""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/0443254f-7306-f744-dba9-2fbd791a8283""
+  },
+  ""id"": ""0443254f-7306-f744-c8e4-21524d693623"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""onsetDateTime"": ""2018-03-07T00:24:09-03:00"",
+  ""recordedDate"": ""2018-03-07T00:24:09-03:00"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/0443254f-7306-f744-7ad4-b1675a59ba99""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/synthea/gptx-syn-016__Condition__0443254f-7306-f744-c8e4-21524d693623.json,ready_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from synthea_pilot50 seed Condition/0443254f-7306-f744-c8e4-21524d693623.",unreviewed_clean_candidate,,,
+gpt_expanded,gptx-syn-017__semi_structured,,,gptx-syn-017,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,semi_structured,Condition: Viral sinusitis | Clinical status: resolved | Verification status: confirmed | Onset: 2013-10-18T20:15:26-03:00 | Abatement: 2013-11-05T20:15:26-03:00,"{
+  ""abatementDateTime"": ""2013-11-05T20:15:26-03:00"",
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""resolved"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""444814009"",
+        ""display"": ""Viral sinusitis (disorder)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Viral sinusitis (disorder)""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/06537fa0-88e4-a5f1-705c-9fb5bbeecd88""
+  },
+  ""id"": ""06537fa0-88e4-a5f1-3a0a-9bb49cae9346"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""onsetDateTime"": ""2013-10-18T20:15:26-03:00"",
+  ""recordedDate"": ""2013-10-18T20:15:26-03:00"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/06537fa0-88e4-a5f1-03a3-e61aa904a286""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/synthea/gptx-syn-017__Condition__06537fa0-88e4-a5f1-3a0a-9bb49cae9346.json,ready_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from synthea_pilot50 seed Condition/06537fa0-88e4-a5f1-3a0a-9bb49cae9346.",unreviewed_clean_candidate,,,
+gpt_expanded,gptx-syn-018__concise_clinical,,,gptx-syn-018,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,concise_clinical,Prediabetes. Clinical status: active. Verification status: confirmed. Onset: 1997-02-21T18:41:59-03:00.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""714628002"",
+        ""display"": ""Prediabetes (finding)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Prediabetes (finding)""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/095dd3d9-8eb6-e786-3d2e-b91f71f4d474""
+  },
+  ""id"": ""095dd3d9-8eb6-e786-d7f9-686ea6fec31c"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""onsetDateTime"": ""1997-02-21T18:41:59-03:00"",
+  ""recordedDate"": ""1997-02-21T18:41:59-03:00"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/095dd3d9-8eb6-e786-8bfe-4e37c593e014""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/synthea/gptx-syn-018__Condition__095dd3d9-8eb6-e786-d7f9-686ea6fec31c.json,ready_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from synthea_pilot50 seed Condition/095dd3d9-8eb6-e786-d7f9-686ea6fec31c.",unreviewed_clean_candidate,,,
+gpt_expanded,gptx-syn-018__semi_structured,,,gptx-syn-018,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,semi_structured,Condition: Prediabetes | Clinical status: active | Verification status: confirmed | Onset: 1997-02-21T18:41:59-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""714628002"",
+        ""display"": ""Prediabetes (finding)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Prediabetes (finding)""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/095dd3d9-8eb6-e786-3d2e-b91f71f4d474""
+  },
+  ""id"": ""095dd3d9-8eb6-e786-d7f9-686ea6fec31c"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""onsetDateTime"": ""1997-02-21T18:41:59-03:00"",
+  ""recordedDate"": ""1997-02-21T18:41:59-03:00"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/095dd3d9-8eb6-e786-8bfe-4e37c593e014""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/synthea/gptx-syn-018__Condition__095dd3d9-8eb6-e786-d7f9-686ea6fec31c.json,ready_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from synthea_pilot50 seed Condition/095dd3d9-8eb6-e786-d7f9-686ea6fec31c.",unreviewed_clean_candidate,,,
+gpt_expanded,gptx-syn-019__concise_clinical,,,gptx-syn-019,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,concise_clinical,Fracture subluxation of wrist. Clinical status: resolved. Verification status: confirmed. Onset: 2016-08-06T03:04:55-03:00. Abatement: 2016-10-23T03:27:58-03:00.,"{
+  ""abatementDateTime"": ""2016-10-23T03:27:58-03:00"",
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""resolved"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""263102004"",
+        ""display"": ""Fracture subluxation of wrist (disorder)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Fracture subluxation of wrist (disorder)""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/00f9e3dc-c68e-7a7d-3906-38c0ba1c377e""
+  },
+  ""id"": ""00f9e3dc-c68e-7a7d-d3bb-4a79d77acb36"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""onsetDateTime"": ""2016-08-06T03:04:55-03:00"",
+  ""recordedDate"": ""2016-08-06T03:04:55-03:00"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/00f9e3dc-c68e-7a7d-1915-8de466a2f70f""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/synthea/gptx-syn-019__Condition__00f9e3dc-c68e-7a7d-d3bb-4a79d77acb36.json,ready_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from synthea_pilot50 seed Condition/00f9e3dc-c68e-7a7d-d3bb-4a79d77acb36.",unreviewed_clean_candidate,,,
+gpt_expanded,gptx-syn-020__semi_structured,,,gptx-syn-020,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,semi_structured,Condition: Chronic sinusitis | Clinical status: active | Verification status: confirmed | Onset: 2018-11-15T03:23:03-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""40055000"",
+        ""display"": ""Chronic sinusitis (disorder)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Chronic sinusitis (disorder)""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/08056bc1-b178-1d21-032d-1ae8460b7185""
+  },
+  ""id"": ""08056bc1-b178-1d21-6eda-44840fd1882b"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""onsetDateTime"": ""2018-11-15T03:23:03-03:00"",
+  ""recordedDate"": ""2018-11-15T03:23:03-03:00"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/08056bc1-b178-1d21-c3de-0e659df18a34""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/synthea/gptx-syn-020__Condition__08056bc1-b178-1d21-6eda-44840fd1882b.json,ready_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from synthea_pilot50 seed Condition/08056bc1-b178-1d21-6eda-44840fd1882b.",unreviewed_clean_candidate,,,

@@ -1,0 +1,235 @@
+dataset,pair_id,candidate_id,seed_id,canonical_seed_id,source_origin,source_file,resource_type,input_style,input_text,target_fhir_json,target_seed_file,review_status,notes,final_status,final_decision,final_notes,source_status
+gpt_expanded,gptx-off-001__concise_clinical,,,gptx-off-001,official,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Patient,concise_clinical,"Active patient ALBERT BROOKS, identifier AB60001.","{
+  ""active"": true,
+  ""id"": ""ihe-pcd"",
+  ""identifier"": [
+    {
+      ""type"": {
+        ""text"": ""Internal Identifier""
+      },
+      ""value"": ""AB60001""
+    }
+  ],
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""name"": [
+    {
+      ""family"": ""BROOKS"",
+      ""given"": [
+        ""ALBERT""
+      ]
+    }
+  ],
+  ""resourceType"": ""Patient"",
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Albert Brooks, Id: AB60001</div>"",
+    ""status"": ""generated""
+  }
+}",inputs/official/gptx-off-001__Patient__ihe-pcd.json,flagged_for_review,Patient expression uses only explicit structured identity/demographic fields from the canonical target and intentionally omits extra linked or non-core structured details. Imported target remains unchanged from official_pilot12 seed official-pilot12-01.,use_now,keep,"Row-level keep is clean, but GPT-expanded as a dataset line is still not backbone-ready. Final decision carried from merged_decision=keep.",
+gpt_expanded,gptx-off-001__semi_structured,,,gptx-off-001,official,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Patient,semi_structured,Patient | Name: ALBERT BROOKS | Identifier: AB60001 | Active: true,"{
+  ""active"": true,
+  ""id"": ""ihe-pcd"",
+  ""identifier"": [
+    {
+      ""type"": {
+        ""text"": ""Internal Identifier""
+      },
+      ""value"": ""AB60001""
+    }
+  ],
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""name"": [
+    {
+      ""family"": ""BROOKS"",
+      ""given"": [
+        ""ALBERT""
+      ]
+    }
+  ],
+  ""resourceType"": ""Patient"",
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Albert Brooks, Id: AB60001</div>"",
+    ""status"": ""generated""
+  }
+}",inputs/official/gptx-off-001__Patient__ihe-pcd.json,flagged_for_review,Patient expression uses only explicit structured identity/demographic fields from the canonical target and intentionally omits extra linked or non-core structured details. Imported target remains unchanged from official_pilot12 seed official-pilot12-01.,use_now,keep,"Row-level keep is clean, but GPT-expanded as a dataset line is still not backbone-ready. Final decision carried from merged_decision=keep.",
+gpt_expanded,gptx-off-003__concise_clinical,,,gptx-off-003,official,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,concise_clinical,Final Body temperature: 36.5 C. Effective: 1999-07-02.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital Signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ],
+      ""text"": ""Vital Signs""
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""8310-5"",
+        ""display"": ""Body temperature"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Body temperature""
+  },
+  ""effectiveDateTime"": ""1999-07-02"",
+  ""id"": ""body-temperature"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/StructureDefinition/vitalsigns""
+    ],
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: body-temperature</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Body temperature <span>(Details : {LOINC code '8310-5' = 'Body temperature', given as 'Body temperature'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 36.5 C<span> (Details: UCUM code Cel = 'Cel')</span></p></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""Cel"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""C"",
+    ""value"": 36.5
+  }
+}",inputs/official/gptx-off-003__Observation__body-temperature.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from official_pilot12 seed official-pilot12-05.",use_now,keep,"Row-level keep is clean, but GPT-expanded as a dataset line is still not backbone-ready. Final decision carried from merged_decision=keep.",
+gpt_expanded,gptx-off-003__semi_structured,,,gptx-off-003,official,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,semi_structured,Observation: Body temperature | Status: final | Value: 36.5 C | Effective: 1999-07-02,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital Signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ],
+      ""text"": ""Vital Signs""
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""8310-5"",
+        ""display"": ""Body temperature"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Body temperature""
+  },
+  ""effectiveDateTime"": ""1999-07-02"",
+  ""id"": ""body-temperature"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/StructureDefinition/vitalsigns""
+    ],
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: body-temperature</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Body temperature <span>(Details : {LOINC code '8310-5' = 'Body temperature', given as 'Body temperature'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 36.5 C<span> (Details: UCUM code Cel = 'Cel')</span></p></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""Cel"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""C"",
+    ""value"": 36.5
+  }
+}",inputs/official/gptx-off-003__Observation__body-temperature.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from official_pilot12 seed official-pilot12-05.",use_now,keep,"Row-level keep is clean, but GPT-expanded as a dataset line is still not backbone-ready. Final decision carried from merged_decision=keep.",
+gpt_expanded,gptx-off-006__brief_clinical_narrative,,,gptx-off-006,official,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,brief_clinical_narrative,Asthma is confirmed and active with Mild severity since approximately November 2012.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""problem-list-item"",
+          ""display"": ""Problem List Item"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""text"": ""Asthma""
+  },
+  ""id"": ""example2"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""onsetString"": ""approximately November 2012"",
+  ""resourceType"": ""Condition"",
+  ""severity"": {
+    ""coding"": [
+      {
+        ""code"": ""255604002"",
+        ""display"": ""Mild"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ]
+  },
+  ""subject"": {
+    ""reference"": ""Patient/example""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Mild Asthma (Date: 12-Nov 2012)</div>"",
+    ""status"": ""generated""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/official/gptx-off-006__Condition__example2.json,flagged_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from official_pilot12 seed official-pilot12-12.",use_now,keep,"Row-level keep is clean, but GPT-expanded as a dataset line is still not backbone-ready. Final decision carried from merged_decision=keep.",

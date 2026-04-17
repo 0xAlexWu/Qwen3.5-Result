@@ -1,0 +1,163 @@
+dataset,pair_id,candidate_id,seed_id,canonical_seed_id,source_origin,source_file,resource_type,input_style,input_text,target_fhir_json,target_seed_file,review_status,notes,final_status,final_decision,final_notes,source_status
+official,official-pair-017,,official-pilot12-09,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Observation,concise_clinical,Final blood glucose observation: 6.3 mmol/l.,"{
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""15074-8"",
+        ""display"": ""Glucose [Moles/volume] in Blood"",
+        ""system"": ""http://loinc.org""
+      }
+    ]
+  },
+  ""effectivePeriod"": {
+    ""start"": ""2013-04-02T09:30:10+01:00""
+  },
+  ""id"": ""f001"",
+  ""identifier"": [
+    {
+      ""system"": ""http://www.bmc.nl/zorgportal/identifiers/observations"",
+      ""use"": ""official"",
+      ""value"": ""6323""
+    }
+  ],
+  ""interpretation"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""H"",
+          ""display"": ""High"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation""
+        }
+      ]
+    }
+  ],
+  ""issued"": ""2013-04-03T15:30:10+01:00"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""performer"": [
+    {
+      ""display"": ""A. Langeveld"",
+      ""reference"": ""Practitioner/f005""
+    }
+  ],
+  ""referenceRange"": [
+    {
+      ""high"": {
+        ""code"": ""mmol/L"",
+        ""system"": ""http://unitsofmeasure.org"",
+        ""unit"": ""mmol/l"",
+        ""value"": 6.2
+      },
+      ""low"": {
+        ""code"": ""mmol/L"",
+        ""system"": ""http://unitsofmeasure.org"",
+        ""unit"": ""mmol/l"",
+        ""value"": 3.1
+      }
+    }
+  ],
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""display"": ""P. van de Heuvel"",
+    ""reference"": ""Patient/f001""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mmol/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mmol/l"",
+    ""value"": 6.3
+  }
+}",data/raw/Observation/observation-example-f001-glucose.json,ready_for_review,Linked subject and performer references were intentionally omitted.,use_after_revision,revise,Official policy: conserve for targeted revision/adjudication before any broader use. Final decision carried from merged_decision=revise.,
+official,official-pair-018,,official-pilot12-09,,,upstream_repos/FHIR-Official-Seeds/outputs/official/official_pilot12_pair_candidates.csv,Observation,semi_structured,Observation: Glucose [Moles/volume] in Blood | Status: final | Value: 6.3 mmol/l | Effective start: 2013-04-02T09:30:10+01:00,"{
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""15074-8"",
+        ""display"": ""Glucose [Moles/volume] in Blood"",
+        ""system"": ""http://loinc.org""
+      }
+    ]
+  },
+  ""effectivePeriod"": {
+    ""start"": ""2013-04-02T09:30:10+01:00""
+  },
+  ""id"": ""f001"",
+  ""identifier"": [
+    {
+      ""system"": ""http://www.bmc.nl/zorgportal/identifiers/observations"",
+      ""use"": ""official"",
+      ""value"": ""6323""
+    }
+  ],
+  ""interpretation"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""H"",
+          ""display"": ""High"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation""
+        }
+      ]
+    }
+  ],
+  ""issued"": ""2013-04-03T15:30:10+01:00"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""performer"": [
+    {
+      ""display"": ""A. Langeveld"",
+      ""reference"": ""Practitioner/f005""
+    }
+  ],
+  ""referenceRange"": [
+    {
+      ""high"": {
+        ""code"": ""mmol/L"",
+        ""system"": ""http://unitsofmeasure.org"",
+        ""unit"": ""mmol/l"",
+        ""value"": 6.2
+      },
+      ""low"": {
+        ""code"": ""mmol/L"",
+        ""system"": ""http://unitsofmeasure.org"",
+        ""unit"": ""mmol/l"",
+        ""value"": 3.1
+      }
+    }
+  ],
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""display"": ""P. van de Heuvel"",
+    ""reference"": ""Patient/f001""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mmol/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mmol/l"",
+    ""value"": 6.3
+  }
+}",data/raw/Observation/observation-example-f001-glucose.json,needs_manual_review,Linked subject and performer references were intentionally omitted.,use_after_revision,revise,Official policy: conserve for targeted revision/adjudication before any broader use. Final decision carried from merged_decision=revise.,

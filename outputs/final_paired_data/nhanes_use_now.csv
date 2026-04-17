@@ -1,0 +1,239 @@
+dataset,pair_id,candidate_id,seed_id,canonical_seed_id,source_origin,source_file,resource_type,input_style,input_text,target_fhir_json,target_seed_file,review_status,notes,final_status,final_decision,final_notes,source_status
+nhanes,NHANES-P15-09-concise_clinical,,NHANES-P15-09,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,concise_clinical,Systolic: Blood pres: 112 mm Hg,"{
+  ""code"": {
+    ""text"": ""Systolic: Blood pres""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93706""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""mm Hg"",
+    ""value"": 112
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-09-semi_structured,,NHANES-P15-09,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,semi_structured,"BPX_J
+participant: 93706
+measure = Systolic: Blood pres
+value = 112
+unit = mm Hg","{
+  ""code"": {
+    ""text"": ""Systolic: Blood pres""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93706""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""mm Hg"",
+    ""value"": 112
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-10-concise_clinical,,NHANES-P15-10,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,concise_clinical,Diastolic: Blood pres: 38 mm Hg,"{
+  ""code"": {
+    ""text"": ""Diastolic: Blood pres""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93707""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""mm Hg"",
+    ""value"": 38
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-10-semi_structured,,NHANES-P15-10,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,semi_structured,"BPX_J
+participant: 93707
+measure = Diastolic: Blood pres
+value = 38
+unit = mm Hg","{
+  ""code"": {
+    ""text"": ""Diastolic: Blood pres""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93707""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""mm Hg"",
+    ""value"": 38
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-11-concise_clinical,,NHANES-P15-11,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,concise_clinical,Glycohemoglobin: 6.2 %,"{
+  ""code"": {
+    ""text"": ""Glycohemoglobin""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93708""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""%"",
+    ""value"": 6.2
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-11-semi_structured,,NHANES-P15-11,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,semi_structured,"GHB_J
+participant: 93708
+measure = Glycohemoglobin
+value = 6.2
+unit = %","{
+  ""code"": {
+    ""text"": ""Glycohemoglobin""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93708""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""%"",
+    ""value"": 6.2
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-12-concise_clinical,,NHANES-P15-12,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,concise_clinical,Total Cholesterol: 176 mg/dL,"{
+  ""code"": {
+    ""text"": ""Total Cholesterol""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93709""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""mg/dL"",
+    ""value"": 176
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-12-semi_structured,,NHANES-P15-12,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,semi_structured,"TCHOL_J
+participant: 93709
+measure = Total Cholesterol
+value = 176
+unit = mg/dL","{
+  ""code"": {
+    ""text"": ""Total Cholesterol""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93709""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""mg/dL"",
+    ""value"": 176
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-13-concise_clinical,,NHANES-P15-13,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,concise_clinical,"Creatinine, refrigerated serum: 0.77 mg/dL","{
+  ""code"": {
+    ""text"": ""Creatinine, refrigerated serum""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93712""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""mg/dL"",
+    ""value"": 0.77
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-13-semi_structured,,NHANES-P15-13,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,semi_structured,"BIOPRO_J
+participant: 93712
+measure = Creatinine, refrigerated serum
+value = 0.77
+unit = mg/dL","{
+  ""code"": {
+    ""text"": ""Creatinine, refrigerated serum""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93712""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""mg/dL"",
+    ""value"": 0.77
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-14-concise_clinical,,NHANES-P15-14,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,concise_clinical,"Albumin, refrigerated serum: 4.3 g/dL","{
+  ""code"": {
+    ""text"": ""Albumin, refrigerated serum""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93713""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""g/dL"",
+    ""value"": 4.3
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-14-semi_structured,,NHANES-P15-14,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,semi_structured,"BIOPRO_J
+participant: 93713
+measure = Albumin, refrigerated serum
+value = 4.3
+unit = g/dL","{
+  ""code"": {
+    ""text"": ""Albumin, refrigerated serum""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93713""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""g/dL"",
+    ""value"": 4.3
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-15-concise_clinical,,NHANES-P15-15,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,concise_clinical,Total Calcium: 9.1 mg/dL,"{
+  ""code"": {
+    ""text"": ""Total Calcium""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93714""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""mg/dL"",
+    ""value"": 9.1
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,
+nhanes,NHANES-P15-15-semi_structured,,NHANES-P15-15,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,semi_structured,"BIOPRO_J
+participant: 93714
+measure = Total Calcium
+value = 9.1
+unit = mg/dL","{
+  ""code"": {
+    ""text"": ""Total Calcium""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93714""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""mg/dL"",
+    ""value"": 9.1
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.,

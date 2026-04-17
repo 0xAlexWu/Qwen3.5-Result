@@ -1,0 +1,1014 @@
+dataset,pair_id,candidate_id,seed_id,canonical_seed_id,source_origin,source_file,resource_type,input_style,input_text,target_fhir_json,target_seed_file,review_status,notes,final_status,final_decision,final_notes,source_status
+gpt_expanded,gptx-syn-002__concise_clinical,,,gptx-syn-002,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Patient,concise_clinical,"male patient Tyson541 Bins636, born 1989-10-18. Marital status: Married.","{
+  ""address"": [
+    {
+      ""city"": ""Lawrence"",
+      ""country"": ""US"",
+      ""extension"": [
+        {
+          ""extension"": [
+            {
+              ""url"": ""latitude"",
+              ""valueDecimal"": 38.93970771004292
+            },
+            {
+              ""url"": ""longitude"",
+              ""valueDecimal"": -95.19277341151493
+            }
+          ],
+          ""url"": ""http://hl7.org/fhir/StructureDefinition/geolocation""
+        }
+      ],
+      ""line"": [
+        ""590 Kuhlman Gateway Unit 26""
+      ],
+      ""postalCode"": ""66045"",
+      ""state"": ""KS""
+    }
+  ],
+  ""birthDate"": ""1989-10-18"",
+  ""communication"": [
+    {
+      ""language"": {
+        ""coding"": [
+          {
+            ""code"": ""en-US"",
+            ""display"": ""English (United States)"",
+            ""system"": ""urn:ietf:bcp:47""
+          }
+        ],
+        ""text"": ""English (United States)""
+      }
+    }
+  ],
+  ""extension"": [
+    {
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""code"": ""2106-3"",
+            ""display"": ""White"",
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""White""
+        }
+      ],
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-race""
+    },
+    {
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""code"": ""2186-5"",
+            ""display"": ""Not Hispanic or Latino"",
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""Not Hispanic or Latino""
+        }
+      ],
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Mira443 Corwin846""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"",
+      ""valueCode"": ""M""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthPlace"",
+      ""valueAddress"": {
+        ""city"": ""Hutchinson"",
+        ""country"": ""US"",
+        ""state"": ""Kansas""
+      }
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/disability-adjusted-life-years"",
+      ""valueDecimal"": 9.15206496405802
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/quality-adjusted-life-years"",
+      ""valueDecimal"": 23.84793503594198
+    }
+  ],
+  ""gender"": ""male"",
+  ""id"": ""0443254f-7306-f744-7ad4-b1675a59ba99"",
+  ""identifier"": [
+    {
+      ""system"": ""https://github.com/synthetichealth/synthea"",
+      ""value"": ""0443254f-7306-f744-7ad4-b1675a59ba99""
+    },
+    {
+      ""system"": ""http://hospital.smarthealthit.org"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""MR"",
+            ""display"": ""Medical Record Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Medical Record Number""
+      },
+      ""value"": ""0443254f-7306-f744-7ad4-b1675a59ba99""
+    },
+    {
+      ""system"": ""http://hl7.org/fhir/sid/us-ssn"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""SS"",
+            ""display"": ""Social Security Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Social Security Number""
+      },
+      ""value"": ""999-72-3999""
+    },
+    {
+      ""system"": ""urn:oid:2.16.840.1.113883.4.3.25"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""DL"",
+            ""display"": ""Driver's license number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Driver's license number""
+      },
+      ""value"": ""S99990648""
+    },
+    {
+      ""system"": ""http://hl7.org/fhir/sid/passport-USA"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""PPN"",
+            ""display"": ""Passport Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Passport Number""
+      },
+      ""value"": ""X80696756X""
+    }
+  ],
+  ""maritalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""M"",
+        ""display"": ""Married"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-MaritalStatus""
+      }
+    ],
+    ""text"": ""Married""
+  },
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient""
+    ]
+  },
+  ""multipleBirthBoolean"": false,
+  ""name"": [
+    {
+      ""family"": ""Bins636"",
+      ""given"": [
+        ""Tyson541""
+      ],
+      ""prefix"": [
+        ""Mr.""
+      ],
+      ""use"": ""official""
+    }
+  ],
+  ""resourceType"": ""Patient"",
+  ""telecom"": [
+    {
+      ""system"": ""phone"",
+      ""use"": ""home"",
+      ""value"": ""555-773-7935""
+    }
+  ],
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Generated by <a href=\""https://github.com/synthetichealth/synthea\"">Synthea</a>.Version identifier: aa0772f\n .   Person seed: 307130222753806148  Population seed: 54321</div>"",
+    ""status"": ""generated""
+  }
+}",inputs/synthea/gptx-syn-002__Patient__0443254f-7306-f744-7ad4-b1675a59ba99.json,flagged_for_review,Patient expression uses only explicit structured identity/demographic fields from the canonical target and intentionally omits extra linked or non-core structured details. Imported target remains unchanged from synthea_pilot50 seed Patient/0443254f-7306-f744-7ad4-b1675a59ba99.,use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-004__concise_clinical,,,gptx-syn-004,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,concise_clinical,Final Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma: 129.36 U/L. Effective: 2022-03-30T03:59:28-03:00.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""6768-6"",
+        ""display"": ""Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma""
+  },
+  ""effectiveDateTime"": ""2022-03-30T03:59:28-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/98758d75-d95a-39ca-25c1-e80fcf071c3f""
+  },
+  ""id"": ""98758d75-d95a-39ca-eace-53571ec75f19"",
+  ""issued"": ""2022-03-30T03:59:28.325-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/98758d75-d95a-39ca-cac0-06ad37370e23""
+  },
+  ""valueQuantity"": {
+    ""code"": ""U/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""U/L"",
+    ""value"": 129.36
+  }
+}",inputs/synthea/gptx-syn-004__Observation__98758d75-d95a-39ca-eace-53571ec75f19.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/98758d75-d95a-39ca-eace-53571ec75f19.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-004__semi_structured,,,gptx-syn-004,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,semi_structured,Observation: Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma | Status: final | Value: 129.36 U/L | Effective: 2022-03-30T03:59:28-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""6768-6"",
+        ""display"": ""Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma""
+  },
+  ""effectiveDateTime"": ""2022-03-30T03:59:28-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/98758d75-d95a-39ca-25c1-e80fcf071c3f""
+  },
+  ""id"": ""98758d75-d95a-39ca-eace-53571ec75f19"",
+  ""issued"": ""2022-03-30T03:59:28.325-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/98758d75-d95a-39ca-cac0-06ad37370e23""
+  },
+  ""valueQuantity"": {
+    ""code"": ""U/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""U/L"",
+    ""value"": 129.36
+  }
+}",inputs/synthea/gptx-syn-004__Observation__98758d75-d95a-39ca-eace-53571ec75f19.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/98758d75-d95a-39ca-eace-53571ec75f19.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-005__concise_clinical,,,gptx-syn-005,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,concise_clinical,Final Respiratory rate: 12 /min. Effective: 2013-12-09T14:04:51-03:00.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""9279-1"",
+        ""display"": ""Respiratory rate"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Respiratory rate""
+  },
+  ""effectiveDateTime"": ""2013-12-09T14:04:51-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/ed952e46-b99b-88f6-af4c-04a1d25f97ac""
+  },
+  ""id"": ""ed952e46-b99b-88f6-0bc1-8f666074aa32"",
+  ""issued"": ""2013-12-09T14:04:51.798-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/ed952e46-b99b-88f6-5792-ab8cbf8d7b84""
+  },
+  ""valueQuantity"": {
+    ""code"": ""/min"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""/min"",
+    ""value"": 12
+  }
+}",inputs/synthea/gptx-syn-005__Observation__ed952e46-b99b-88f6-0bc1-8f666074aa32.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/ed952e46-b99b-88f6-0bc1-8f666074aa32.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-006__semi_structured,,,gptx-syn-006,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,semi_structured,Observation: Body Weight | Status: final | Value: 85.9 kg | Effective: 2021-06-13T08:09:18-04:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""29463-7"",
+        ""display"": ""Body Weight"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Body Weight""
+  },
+  ""effectiveDateTime"": ""2021-06-13T08:09:18-04:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/bc315015-3d2e-19d7-a688-2f39137562f4""
+  },
+  ""id"": ""eb58ee3d-7579-10ba-7029-da628f7bd025"",
+  ""issued"": ""2021-06-13T08:09:18.620-04:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/6cfac06f-9926-607b-4134-60fd14557160""
+  },
+  ""valueQuantity"": {
+    ""code"": ""kg"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""kg"",
+    ""value"": 85.9
+  }
+}",inputs/synthea/gptx-syn-006__Observation__eb58ee3d-7579-10ba-7029-da628f7bd025.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/eb58ee3d-7579-10ba-7029-da628f7bd025.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-007__concise_clinical,,,gptx-syn-007,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,concise_clinical,Final Albumin [Mass/volume] in Serum or Plasma: 4.1117 g/dL. Effective: 2018-05-31T04:43:10-03:00.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""1751-7"",
+        ""display"": ""Albumin [Mass/volume] in Serum or Plasma"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Albumin [Mass/volume] in Serum or Plasma""
+  },
+  ""effectiveDateTime"": ""2018-05-31T04:43:10-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/b9df4e45-05ba-5456-3b46-75264b13aa32""
+  },
+  ""id"": ""b9df4e45-05ba-5456-c0f6-7006fbb045ab"",
+  ""issued"": ""2018-05-31T04:43:10.247-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/b9df4e45-05ba-5456-4656-cdfcd257db32""
+  },
+  ""valueQuantity"": {
+    ""code"": ""g/dL"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""g/dL"",
+    ""value"": 4.1117
+  }
+}",inputs/synthea/gptx-syn-007__Observation__b9df4e45-05ba-5456-c0f6-7006fbb045ab.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/b9df4e45-05ba-5456-c0f6-7006fbb045ab.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-007__semi_structured,,,gptx-syn-007,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,semi_structured,Observation: Albumin [Mass/volume] in Serum or Plasma | Status: final | Value: 4.1117 g/dL | Effective: 2018-05-31T04:43:10-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""1751-7"",
+        ""display"": ""Albumin [Mass/volume] in Serum or Plasma"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Albumin [Mass/volume] in Serum or Plasma""
+  },
+  ""effectiveDateTime"": ""2018-05-31T04:43:10-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/b9df4e45-05ba-5456-3b46-75264b13aa32""
+  },
+  ""id"": ""b9df4e45-05ba-5456-c0f6-7006fbb045ab"",
+  ""issued"": ""2018-05-31T04:43:10.247-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/b9df4e45-05ba-5456-4656-cdfcd257db32""
+  },
+  ""valueQuantity"": {
+    ""code"": ""g/dL"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""g/dL"",
+    ""value"": 4.1117
+  }
+}",inputs/synthea/gptx-syn-007__Observation__b9df4e45-05ba-5456-c0f6-7006fbb045ab.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/b9df4e45-05ba-5456-c0f6-7006fbb045ab.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-008__concise_clinical,,,gptx-syn-008,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,concise_clinical,Final MCH [Entitic mass] by Automated count: 29.994 pg. Effective: 2016-11-28T04:52:32-03:00.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""785-6"",
+        ""display"": ""MCH [Entitic mass] by Automated count"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""MCH [Entitic mass] by Automated count""
+  },
+  ""effectiveDateTime"": ""2016-11-28T04:52:32-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/b262c778-41c9-499a-f27b-46c55aa1eb51""
+  },
+  ""id"": ""b262c778-41c9-499a-7267-c725c080ddf6"",
+  ""issued"": ""2016-11-28T04:52:32.723-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/b262c778-41c9-499a-54c0-ed167d6a251a""
+  },
+  ""valueQuantity"": {
+    ""code"": ""pg"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""pg"",
+    ""value"": 29.994
+  }
+}",inputs/synthea/gptx-syn-008__Observation__b262c778-41c9-499a-7267-c725c080ddf6.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/b262c778-41c9-499a-7267-c725c080ddf6.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-009__semi_structured,,,gptx-syn-009,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,semi_structured,Observation: pH of Urine by Test strip | Status: final | Value: 5.5205 pH | Effective: 2011-06-22T15:38:58-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""5803-2"",
+        ""display"": ""pH of Urine by Test strip"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""pH of Urine by Test strip""
+  },
+  ""effectiveDateTime"": ""2011-06-22T15:38:58-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/c30f6311-cc84-486f-5668-b5d9c5b2c3a7""
+  },
+  ""id"": ""c30f6311-cc84-486f-64b5-1ee03f48f84e"",
+  ""issued"": ""2011-06-22T15:38:58.140-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/c30f6311-cc84-486f-c751-87b942ca9dbd""
+  },
+  ""valueQuantity"": {
+    ""code"": ""pH"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""pH"",
+    ""value"": 5.5205
+  }
+}",inputs/synthea/gptx-syn-009__Observation__c30f6311-cc84-486f-64b5-1ee03f48f84e.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/c30f6311-cc84-486f-64b5-1ee03f48f84e.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-010__concise_clinical,,,gptx-syn-010,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,concise_clinical,Final Chloride [Moles/volume] in Blood: 108.89 mmol/L. Effective: 2021-10-17T00:35:07-03:00.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""2069-3"",
+        ""display"": ""Chloride [Moles/volume] in Blood"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Chloride [Moles/volume] in Blood""
+  },
+  ""effectiveDateTime"": ""2021-10-17T00:35:07-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/a533c757-e03a-772e-b5dd-86602dcfcf08""
+  },
+  ""id"": ""a533c757-e03a-772e-6043-d5e81555d4f8"",
+  ""issued"": ""2021-10-17T00:35:07.650-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/a533c757-e03a-772e-341a-43b18d2655a3""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mmol/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mmol/L"",
+    ""value"": 108.89
+  }
+}",inputs/synthea/gptx-syn-010__Observation__a533c757-e03a-772e-6043-d5e81555d4f8.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/a533c757-e03a-772e-6043-d5e81555d4f8.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-010__semi_structured,,,gptx-syn-010,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,semi_structured,Observation: Chloride [Moles/volume] in Blood | Status: final | Value: 108.89 mmol/L | Effective: 2021-10-17T00:35:07-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""2069-3"",
+        ""display"": ""Chloride [Moles/volume] in Blood"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Chloride [Moles/volume] in Blood""
+  },
+  ""effectiveDateTime"": ""2021-10-17T00:35:07-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/a533c757-e03a-772e-b5dd-86602dcfcf08""
+  },
+  ""id"": ""a533c757-e03a-772e-6043-d5e81555d4f8"",
+  ""issued"": ""2021-10-17T00:35:07.650-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/a533c757-e03a-772e-341a-43b18d2655a3""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mmol/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mmol/L"",
+    ""value"": 108.89
+  }
+}",inputs/synthea/gptx-syn-010__Observation__a533c757-e03a-772e-6043-d5e81555d4f8.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/a533c757-e03a-772e-6043-d5e81555d4f8.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-011__concise_clinical,,,gptx-syn-011,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,concise_clinical,Final Leukocytes [#/volume] in Blood by Automated count: 5.1655 10*3/uL. Effective: 2015-04-11T12:48:40-03:00.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""6690-2"",
+        ""display"": ""Leukocytes [#/volume] in Blood by Automated count"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Leukocytes [#/volume] in Blood by Automated count""
+  },
+  ""effectiveDateTime"": ""2015-04-11T12:48:40-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/54ee6f70-24c3-c150-9bc8-99eabf5170bc""
+  },
+  ""id"": ""54ee6f70-24c3-c150-37e3-432c6d7438ef"",
+  ""issued"": ""2015-04-11T12:48:40.401-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/54ee6f70-24c3-c150-7376-5dcaeebcaa22""
+  },
+  ""valueQuantity"": {
+    ""code"": ""10*3/uL"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""10*3/uL"",
+    ""value"": 5.1655
+  }
+}",inputs/synthea/gptx-syn-011__Observation__54ee6f70-24c3-c150-37e3-432c6d7438ef.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/54ee6f70-24c3-c150-37e3-432c6d7438ef.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-011__shorthand_clinical_note,,,gptx-syn-011,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,shorthand_clinical_note,obs: Leukocytes [#/volume] in Blood by Automated count; status: final; value: 5.1655 10*3/uL; effective: 2015-04-11T12:48:40-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""6690-2"",
+        ""display"": ""Leukocytes [#/volume] in Blood by Automated count"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Leukocytes [#/volume] in Blood by Automated count""
+  },
+  ""effectiveDateTime"": ""2015-04-11T12:48:40-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/54ee6f70-24c3-c150-9bc8-99eabf5170bc""
+  },
+  ""id"": ""54ee6f70-24c3-c150-37e3-432c6d7438ef"",
+  ""issued"": ""2015-04-11T12:48:40.401-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/54ee6f70-24c3-c150-7376-5dcaeebcaa22""
+  },
+  ""valueQuantity"": {
+    ""code"": ""10*3/uL"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""10*3/uL"",
+    ""value"": 5.1655
+  }
+}",inputs/synthea/gptx-syn-011__Observation__54ee6f70-24c3-c150-37e3-432c6d7438ef.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/54ee6f70-24c3-c150-37e3-432c6d7438ef.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-013__semi_structured,,,gptx-syn-013,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,semi_structured,Observation: Creatinine [Mass/volume] in Serum or Plasma | Status: final | Value: 2.3846 mg/dL | Effective: 2019-06-24T06:14:43-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""2160-0"",
+        ""display"": ""Creatinine [Mass/volume] in Serum or Plasma"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Creatinine [Mass/volume] in Serum or Plasma""
+  },
+  ""effectiveDateTime"": ""2019-06-24T06:14:43-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/e8f7e38f-3a74-5f81-2120-f96e20dddf69""
+  },
+  ""id"": ""e8f7e38f-3a74-5f81-e95c-334efa477a3b"",
+  ""issued"": ""2019-06-24T06:14:43.603-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/e8f7e38f-3a74-5f81-6077-3113fe05adce""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mg/dL"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mg/dL"",
+    ""value"": 2.3846
+  }
+}",inputs/synthea/gptx-syn-013__Observation__e8f7e38f-3a74-5f81-e95c-334efa477a3b.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/e8f7e38f-3a74-5f81-e95c-334efa477a3b.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-014__shorthand_clinical_note,,,gptx-syn-014,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,shorthand_clinical_note,obs: Cholesterol [Mass/volume] in Serum or Plasma; status: final; value: 196.73 mg/dL; effective: 2001-10-09T19:51:20-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""2093-3"",
+        ""display"": ""Cholesterol [Mass/volume] in Serum or Plasma"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Cholesterol [Mass/volume] in Serum or Plasma""
+  },
+  ""effectiveDateTime"": ""2001-10-09T19:51:20-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/16b9fbe2-3ca5-2988-075e-d4709b453397""
+  },
+  ""id"": ""16b9fbe2-3ca5-2988-fe3d-70730ce38371"",
+  ""issued"": ""2001-10-09T19:51:20.673-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/16b9fbe2-3ca5-2988-6385-ddd726396505""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mg/dL"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mg/dL"",
+    ""value"": 196.73
+  }
+}",inputs/synthea/gptx-syn-014__Observation__16b9fbe2-3ca5-2988-fe3d-70730ce38371.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/16b9fbe2-3ca5-2988-fe3d-70730ce38371.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-016__brief_clinical_narrative,,,gptx-syn-016,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,brief_clinical_narrative,Severe anxiety (panic) is confirmed and resolved since 2018-03-07T00:24:09-03:00 and ended 2019-03-13T00:22:23-03:00.,"{
+  ""abatementDateTime"": ""2019-03-13T00:22:23-03:00"",
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""resolved"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""80583007"",
+        ""display"": ""Severe anxiety (panic) (finding)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Severe anxiety (panic) (finding)""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/0443254f-7306-f744-dba9-2fbd791a8283""
+  },
+  ""id"": ""0443254f-7306-f744-c8e4-21524d693623"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""onsetDateTime"": ""2018-03-07T00:24:09-03:00"",
+  ""recordedDate"": ""2018-03-07T00:24:09-03:00"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/0443254f-7306-f744-7ad4-b1675a59ba99""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/synthea/gptx-syn-016__Condition__0443254f-7306-f744-c8e4-21524d693623.json,flagged_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from synthea_pilot50 seed Condition/0443254f-7306-f744-c8e4-21524d693623.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-017__shorthand_clinical_note,,,gptx-syn-017,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,shorthand_clinical_note,dx: Viral sinusitis; clinical: resolved; verify: confirmed; onset: 2013-10-18T20:15:26-03:00; abatement: 2013-11-05T20:15:26-03:00,"{
+  ""abatementDateTime"": ""2013-11-05T20:15:26-03:00"",
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""resolved"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""444814009"",
+        ""display"": ""Viral sinusitis (disorder)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Viral sinusitis (disorder)""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/06537fa0-88e4-a5f1-705c-9fb5bbeecd88""
+  },
+  ""id"": ""06537fa0-88e4-a5f1-3a0a-9bb49cae9346"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""onsetDateTime"": ""2013-10-18T20:15:26-03:00"",
+  ""recordedDate"": ""2013-10-18T20:15:26-03:00"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/06537fa0-88e4-a5f1-03a3-e61aa904a286""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/synthea/gptx-syn-017__Condition__06537fa0-88e4-a5f1-3a0a-9bb49cae9346.json,flagged_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from synthea_pilot50 seed Condition/06537fa0-88e4-a5f1-3a0a-9bb49cae9346.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-020__shorthand_clinical_note,,,gptx-syn-020,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,shorthand_clinical_note,dx: Chronic sinusitis; clinical: active; verify: confirmed; onset: 2018-11-15T03:23:03-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""active"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""40055000"",
+        ""display"": ""Chronic sinusitis (disorder)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Chronic sinusitis (disorder)""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/08056bc1-b178-1d21-032d-1ae8460b7185""
+  },
+  ""id"": ""08056bc1-b178-1d21-6eda-44840fd1882b"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""onsetDateTime"": ""2018-11-15T03:23:03-03:00"",
+  ""recordedDate"": ""2018-11-15T03:23:03-03:00"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/08056bc1-b178-1d21-c3de-0e659df18a34""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/synthea/gptx-syn-020__Condition__08056bc1-b178-1d21-6eda-44840fd1882b.json,flagged_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from synthea_pilot50 seed Condition/08056bc1-b178-1d21-6eda-44840fd1882b.",use_after_revision,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,

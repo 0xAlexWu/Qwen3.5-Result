@@ -1,0 +1,217 @@
+dataset,pair_id,candidate_id,seed_id,canonical_seed_id,source_origin,source_file,resource_type,input_style,input_text,target_fhir_json,target_seed_file,review_status,notes,final_status,final_decision,final_notes,source_status
+nhanes,NHANES-P15-01-concise_clinical,,NHANES-P15-01,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Patient,concise_clinical,"Gender: Female; Age in years at screening: 35 years; Race/Hispanic origin: Non-Hispanic White; Country of birth: Born in 50 US states or Washington, DC; Citizenship status: Citizen by birth or naturalization; Marital status: Married; Pregnancy status at exam: Yes, positive lab pregnancy test or self-reported pregnant at exam","{
+  ""extension"": [
+    {
+      ""url"": ""urn:nhanes:age_years"",
+      ""valueInteger"": 35
+    },
+    {
+      ""url"": ""urn:nhanes:race_ethnicity"",
+      ""valueString"": ""Non-Hispanic White""
+    },
+    {
+      ""url"": ""urn:nhanes:country_of_birth"",
+      ""valueString"": ""Born in 50 US states or Washington, DC""
+    },
+    {
+      ""url"": ""urn:nhanes:citizenship_status"",
+      ""valueString"": ""Citizen by birth or naturalization""
+    },
+    {
+      ""url"": ""urn:nhanes:marital_status"",
+      ""valueString"": ""Married""
+    },
+    {
+      ""url"": ""urn:nhanes:pregnancy_status"",
+      ""valueString"": ""Yes, positive lab pregnancy test or self-reported pregnant at exam""
+    }
+  ],
+  ""gender"": ""female"",
+  ""identifier"": [
+    {
+      ""value"": ""93929""
+    }
+  ],
+  ""resourceType"": ""Patient""
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target keeps Patient.gender when available and preserves the remaining NHANES demographic fragments via local extension-style fields.,use_after_revision,,NHANES policy: pending row is repairable and should be resolved in targeted adjudication. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+nhanes,NHANES-P15-01-semi_structured,,NHANES-P15-01,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Patient,semi_structured,"DEMO_J
+participant: 93929
+Gender = Female
+Age in years at screening = 35 years
+Race/Hispanic origin = Non-Hispanic White
+Country of birth = Born in 50 US states or Washington, DC
+Citizenship status = Citizen by birth or naturalization
+Marital status = Married
+Pregnancy status at exam = Yes, positive lab pregnancy test or self-reported pregnant at exam","{
+  ""extension"": [
+    {
+      ""url"": ""urn:nhanes:age_years"",
+      ""valueInteger"": 35
+    },
+    {
+      ""url"": ""urn:nhanes:race_ethnicity"",
+      ""valueString"": ""Non-Hispanic White""
+    },
+    {
+      ""url"": ""urn:nhanes:country_of_birth"",
+      ""valueString"": ""Born in 50 US states or Washington, DC""
+    },
+    {
+      ""url"": ""urn:nhanes:citizenship_status"",
+      ""valueString"": ""Citizen by birth or naturalization""
+    },
+    {
+      ""url"": ""urn:nhanes:marital_status"",
+      ""valueString"": ""Married""
+    },
+    {
+      ""url"": ""urn:nhanes:pregnancy_status"",
+      ""valueString"": ""Yes, positive lab pregnancy test or self-reported pregnant at exam""
+    }
+  ],
+  ""gender"": ""female"",
+  ""identifier"": [
+    {
+      ""value"": ""93929""
+    }
+  ],
+  ""resourceType"": ""Patient""
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target keeps Patient.gender when available and preserves the remaining NHANES demographic fragments via local extension-style fields.,use_after_revision,,NHANES policy: pending row is repairable and should be resolved in targeted adjudication. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+nhanes,NHANES-P15-04-concise_clinical,,NHANES-P15-04,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Patient,concise_clinical,Gender: Female; Age in years at screening: 61 years; Race/Hispanic origin: Other Hispanic; Country of birth: Others; Citizenship status: Not a citizen of the US; Marital status: Married,"{
+  ""extension"": [
+    {
+      ""url"": ""urn:nhanes:age_years"",
+      ""valueInteger"": 61
+    },
+    {
+      ""url"": ""urn:nhanes:race_ethnicity"",
+      ""valueString"": ""Other Hispanic""
+    },
+    {
+      ""url"": ""urn:nhanes:country_of_birth"",
+      ""valueString"": ""Others""
+    },
+    {
+      ""url"": ""urn:nhanes:citizenship_status"",
+      ""valueString"": ""Not a citizen of the US""
+    },
+    {
+      ""url"": ""urn:nhanes:marital_status"",
+      ""valueString"": ""Married""
+    }
+  ],
+  ""gender"": ""female"",
+  ""identifier"": [
+    {
+      ""value"": ""93985""
+    }
+  ],
+  ""resourceType"": ""Patient""
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target keeps Patient.gender when available and preserves the remaining NHANES demographic fragments via local extension-style fields.,use_after_revision,,NHANES policy: pending row is repairable and should be resolved in targeted adjudication. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+nhanes,NHANES-P15-04-semi_structured,,NHANES-P15-04,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Patient,semi_structured,"DEMO_J
+participant: 93985
+Gender = Female
+Age in years at screening = 61 years
+Race/Hispanic origin = Other Hispanic
+Country of birth = Others
+Citizenship status = Not a citizen of the US
+Marital status = Married","{
+  ""extension"": [
+    {
+      ""url"": ""urn:nhanes:age_years"",
+      ""valueInteger"": 61
+    },
+    {
+      ""url"": ""urn:nhanes:race_ethnicity"",
+      ""valueString"": ""Other Hispanic""
+    },
+    {
+      ""url"": ""urn:nhanes:country_of_birth"",
+      ""valueString"": ""Others""
+    },
+    {
+      ""url"": ""urn:nhanes:citizenship_status"",
+      ""valueString"": ""Not a citizen of the US""
+    },
+    {
+      ""url"": ""urn:nhanes:marital_status"",
+      ""valueString"": ""Married""
+    }
+  ],
+  ""gender"": ""female"",
+  ""identifier"": [
+    {
+      ""value"": ""93985""
+    }
+  ],
+  ""resourceType"": ""Patient""
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target keeps Patient.gender when available and preserves the remaining NHANES demographic fragments via local extension-style fields.,use_after_revision,,NHANES policy: pending row is repairable and should be resolved in targeted adjudication. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+nhanes,NHANES-P15-05-concise_clinical,,NHANES-P15-05,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Patient,concise_clinical,Gender: Male; Age in years at screening: 56 years; Race/Hispanic origin: Non-Hispanic Asian; Country of birth: Others; Citizenship status: Citizen by birth or naturalization; Marital status: Married,"{
+  ""extension"": [
+    {
+      ""url"": ""urn:nhanes:age_years"",
+      ""valueInteger"": 56
+    },
+    {
+      ""url"": ""urn:nhanes:race_ethnicity"",
+      ""valueString"": ""Non-Hispanic Asian""
+    },
+    {
+      ""url"": ""urn:nhanes:country_of_birth"",
+      ""valueString"": ""Others""
+    },
+    {
+      ""url"": ""urn:nhanes:citizenship_status"",
+      ""valueString"": ""Citizen by birth or naturalization""
+    },
+    {
+      ""url"": ""urn:nhanes:marital_status"",
+      ""valueString"": ""Married""
+    }
+  ],
+  ""gender"": ""male"",
+  ""identifier"": [
+    {
+      ""value"": ""93711""
+    }
+  ],
+  ""resourceType"": ""Patient""
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target keeps Patient.gender when available and preserves the remaining NHANES demographic fragments via local extension-style fields.,use_after_revision,,NHANES policy: pending row is repairable and should be resolved in targeted adjudication. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+nhanes,NHANES-P15-05-semi_structured,,NHANES-P15-05,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Patient,semi_structured,"DEMO_J
+participant: 93711
+Gender = Male
+Age in years at screening = 56 years
+Race/Hispanic origin = Non-Hispanic Asian
+Country of birth = Others
+Citizenship status = Citizen by birth or naturalization
+Marital status = Married","{
+  ""extension"": [
+    {
+      ""url"": ""urn:nhanes:age_years"",
+      ""valueInteger"": 56
+    },
+    {
+      ""url"": ""urn:nhanes:race_ethnicity"",
+      ""valueString"": ""Non-Hispanic Asian""
+    },
+    {
+      ""url"": ""urn:nhanes:country_of_birth"",
+      ""valueString"": ""Others""
+    },
+    {
+      ""url"": ""urn:nhanes:citizenship_status"",
+      ""valueString"": ""Citizen by birth or naturalization""
+    },
+    {
+      ""url"": ""urn:nhanes:marital_status"",
+      ""valueString"": ""Married""
+    }
+  ],
+  ""gender"": ""male"",
+  ""identifier"": [
+    {
+      ""value"": ""93711""
+    }
+  ],
+  ""resourceType"": ""Patient""
+}",outputs/nhanes/nhanes_pilot15_selected.csv,needs_manual_review,Target keeps Patient.gender when available and preserves the remaining NHANES demographic fragments via local extension-style fields.,use_after_revision,,NHANES policy: pending row is repairable and should be resolved in targeted adjudication. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,

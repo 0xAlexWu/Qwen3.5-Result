@@ -1,0 +1,232 @@
+dataset,pair_id,candidate_id,seed_id,canonical_seed_id,source_origin,source_file,resource_type,input_style,input_text,target_fhir_json,target_seed_file,review_status,notes,final_status,final_decision,final_notes,source_status
+nhanes,NHANES-P15-02-concise_clinical,,NHANES-P15-02,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Patient,concise_clinical,"Gender: Male; Age in years at screening: 40 years; Race/Hispanic origin: Non-Hispanic White; Country of birth: Born in 50 US states or Washington, DC; Citizenship status: Citizen by birth or naturalization; Marital status: Married","{
+  ""extension"": [
+    {
+      ""url"": ""urn:nhanes:age_years"",
+      ""valueInteger"": 40
+    },
+    {
+      ""url"": ""urn:nhanes:race_ethnicity"",
+      ""valueString"": ""Non-Hispanic White""
+    },
+    {
+      ""url"": ""urn:nhanes:country_of_birth"",
+      ""valueString"": ""Born in 50 US states or Washington, DC""
+    },
+    {
+      ""url"": ""urn:nhanes:citizenship_status"",
+      ""valueString"": ""Citizen by birth or naturalization""
+    },
+    {
+      ""url"": ""urn:nhanes:marital_status"",
+      ""valueString"": ""Married""
+    }
+  ],
+  ""gender"": ""male"",
+  ""identifier"": [
+    {
+      ""value"": ""93763""
+    }
+  ],
+  ""resourceType"": ""Patient""
+}",outputs/nhanes/nhanes_pilot15_selected.csv,ready,Target keeps Patient.gender when available and preserves the remaining NHANES demographic fragments via local extension-style fields.,unreviewed_clean_candidate,,,
+nhanes,NHANES-P15-02-semi_structured,,NHANES-P15-02,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Patient,semi_structured,"DEMO_J
+participant: 93763
+Gender = Male
+Age in years at screening = 40 years
+Race/Hispanic origin = Non-Hispanic White
+Country of birth = Born in 50 US states or Washington, DC
+Citizenship status = Citizen by birth or naturalization
+Marital status = Married","{
+  ""extension"": [
+    {
+      ""url"": ""urn:nhanes:age_years"",
+      ""valueInteger"": 40
+    },
+    {
+      ""url"": ""urn:nhanes:race_ethnicity"",
+      ""valueString"": ""Non-Hispanic White""
+    },
+    {
+      ""url"": ""urn:nhanes:country_of_birth"",
+      ""valueString"": ""Born in 50 US states or Washington, DC""
+    },
+    {
+      ""url"": ""urn:nhanes:citizenship_status"",
+      ""valueString"": ""Citizen by birth or naturalization""
+    },
+    {
+      ""url"": ""urn:nhanes:marital_status"",
+      ""valueString"": ""Married""
+    }
+  ],
+  ""gender"": ""male"",
+  ""identifier"": [
+    {
+      ""value"": ""93763""
+    }
+  ],
+  ""resourceType"": ""Patient""
+}",outputs/nhanes/nhanes_pilot15_selected.csv,ready,Target keeps Patient.gender when available and preserves the remaining NHANES demographic fragments via local extension-style fields.,unreviewed_clean_candidate,,,
+nhanes,NHANES-P15-03-concise_clinical,,NHANES-P15-03,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Patient,concise_clinical,"Gender: Male; Age in years at screening: 8 years; Race/Hispanic origin: Non-Hispanic Black; Country of birth: Born in 50 US states or Washington, DC; Citizenship status: Citizen by birth or naturalization","{
+  ""extension"": [
+    {
+      ""url"": ""urn:nhanes:age_years"",
+      ""valueInteger"": 8
+    },
+    {
+      ""url"": ""urn:nhanes:race_ethnicity"",
+      ""valueString"": ""Non-Hispanic Black""
+    },
+    {
+      ""url"": ""urn:nhanes:country_of_birth"",
+      ""valueString"": ""Born in 50 US states or Washington, DC""
+    },
+    {
+      ""url"": ""urn:nhanes:citizenship_status"",
+      ""valueString"": ""Citizen by birth or naturalization""
+    }
+  ],
+  ""gender"": ""male"",
+  ""identifier"": [
+    {
+      ""value"": ""93737""
+    }
+  ],
+  ""resourceType"": ""Patient""
+}",outputs/nhanes/nhanes_pilot15_selected.csv,ready,Target keeps Patient.gender when available and preserves the remaining NHANES demographic fragments via local extension-style fields.,unreviewed_clean_candidate,,,
+nhanes,NHANES-P15-03-semi_structured,,NHANES-P15-03,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Patient,semi_structured,"DEMO_J
+participant: 93737
+Gender = Male
+Age in years at screening = 8 years
+Race/Hispanic origin = Non-Hispanic Black
+Country of birth = Born in 50 US states or Washington, DC
+Citizenship status = Citizen by birth or naturalization","{
+  ""extension"": [
+    {
+      ""url"": ""urn:nhanes:age_years"",
+      ""valueInteger"": 8
+    },
+    {
+      ""url"": ""urn:nhanes:race_ethnicity"",
+      ""valueString"": ""Non-Hispanic Black""
+    },
+    {
+      ""url"": ""urn:nhanes:country_of_birth"",
+      ""valueString"": ""Born in 50 US states or Washington, DC""
+    },
+    {
+      ""url"": ""urn:nhanes:citizenship_status"",
+      ""valueString"": ""Citizen by birth or naturalization""
+    }
+  ],
+  ""gender"": ""male"",
+  ""identifier"": [
+    {
+      ""value"": ""93737""
+    }
+  ],
+  ""resourceType"": ""Patient""
+}",outputs/nhanes/nhanes_pilot15_selected.csv,ready,Target keeps Patient.gender when available and preserves the remaining NHANES demographic fragments via local extension-style fields.,unreviewed_clean_candidate,,,
+nhanes,NHANES-P15-06-concise_clinical,,NHANES-P15-06,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,concise_clinical,Weight: 13.7 kg,"{
+  ""code"": {
+    ""text"": ""Weight""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93703""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""kg"",
+    ""value"": 13.7
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,ready,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,unreviewed_clean_candidate,,,
+nhanes,NHANES-P15-06-semi_structured,,NHANES-P15-06,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,semi_structured,"BMX_J
+participant: 93703
+measure = Weight
+value = 13.7
+unit = kg","{
+  ""code"": {
+    ""text"": ""Weight""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93703""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""kg"",
+    ""value"": 13.7
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,ready,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,unreviewed_clean_candidate,,,
+nhanes,NHANES-P15-07-concise_clinical,,NHANES-P15-07,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,concise_clinical,Standing Height: 94.2 cm,"{
+  ""code"": {
+    ""text"": ""Standing Height""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93704""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""cm"",
+    ""value"": 94.2
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,ready,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,unreviewed_clean_candidate,,,
+nhanes,NHANES-P15-07-semi_structured,,NHANES-P15-07,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,semi_structured,"BMX_J
+participant: 93704
+measure = Standing Height
+value = 94.2
+unit = cm","{
+  ""code"": {
+    ""text"": ""Standing Height""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93704""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""cm"",
+    ""value"": 94.2
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,ready,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,unreviewed_clean_candidate,,,
+nhanes,NHANES-P15-08-concise_clinical,,NHANES-P15-08,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,concise_clinical,Body Mass Index (kg/m^2): 31.7 kg/m^2,"{
+  ""code"": {
+    ""text"": ""Body Mass Index (kg/m^2)""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93705""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""kg/m^2"",
+    ""value"": 31.7
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,ready,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,unreviewed_clean_candidate,,,
+nhanes,NHANES-P15-08-semi_structured,,NHANES-P15-08,,,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,Observation,semi_structured,"BMX_J
+participant: 93705
+measure = Body Mass Index (kg/m^2)
+value = 31.7
+unit = kg/m^2","{
+  ""code"": {
+    ""text"": ""Body Mass Index (kg/m^2)""
+  },
+  ""resourceType"": ""Observation"",
+  ""subject"": {
+    ""identifier"": {
+      ""value"": ""93705""
+    }
+  },
+  ""valueQuantity"": {
+    ""unit"": ""kg/m^2"",
+    ""value"": 31.7
+  }
+}",outputs/nhanes/nhanes_pilot15_selected.csv,ready,Target uses Observation.code.text and valueQuantity only; no standard coding system was asserted.,unreviewed_clean_candidate,,,

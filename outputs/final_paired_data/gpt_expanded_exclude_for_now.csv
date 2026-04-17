@@ -1,0 +1,1034 @@
+dataset,pair_id,candidate_id,seed_id,canonical_seed_id,source_origin,source_file,resource_type,input_style,input_text,target_fhir_json,target_seed_file,review_status,notes,final_status,final_decision,final_notes,source_status
+gpt_expanded,gptx-off-002__brief_clinical_narrative,,,gptx-off-002,official,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Patient,brief_clinical_narrative,The patient is an active female patient born 1966-04-04. Identifier: 999999999. Status is not deceased.,"{
+  ""active"": true,
+  ""birthDate"": ""1966-04-04"",
+  ""deceasedBoolean"": false,
+  ""gender"": ""female"",
+  ""id"": ""proband"",
+  ""identifier"": [
+    {
+      ""assigner"": {
+        ""display"": ""Boston Massachesetts General Hospital""
+      },
+      ""system"": ""urn:oid:2.16.840.1.113883.6.117"",
+      ""type"": {
+        ""text"": ""Computer-Stored Abulatory Records (COSTAR)""
+      },
+      ""use"": ""usual"",
+      ""value"": ""999999999""
+    }
+  ],
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""resourceType"": ""Patient"",
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">\n\n      <p>\n\n        <b>Annie Proband</b>: Female, born 1966-04-04\n      </p>\n\n    </div>"",
+    ""status"": ""generated""
+  }
+}",inputs/official/gptx-off-002__Patient__proband.json,flagged_for_review,Patient expression uses only explicit structured identity/demographic fields from the canonical target and intentionally omits extra linked or non-core structured details. Imported target remains unchanged from official_pilot12 seed official-pilot12-02.,exclude_for_now,,GPT-expanded policy: default conservative exclusion until much more of the pending queue is resolved. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+gpt_expanded,gptx-off-004__brief_clinical_narrative,,,gptx-off-004,official,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,brief_clinical_narrative,Glucose [Moles/volume] in Blood was recorded as 6.3 mmol/l with final status effective 2013-04-02T09:30:10+01:00 and interpreted as High.,"{
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""15074-8"",
+        ""display"": ""Glucose [Moles/volume] in Blood"",
+        ""system"": ""http://loinc.org""
+      }
+    ]
+  },
+  ""effectivePeriod"": {
+    ""start"": ""2013-04-02T09:30:10+01:00""
+  },
+  ""id"": ""f001"",
+  ""identifier"": [
+    {
+      ""system"": ""http://www.bmc.nl/zorgportal/identifiers/observations"",
+      ""use"": ""official"",
+      ""value"": ""6323""
+    }
+  ],
+  ""interpretation"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""H"",
+          ""display"": ""High"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation""
+        }
+      ]
+    }
+  ],
+  ""issued"": ""2013-04-03T15:30:10+01:00"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""performer"": [
+    {
+      ""display"": ""A. Langeveld"",
+      ""reference"": ""Practitioner/f005""
+    }
+  ],
+  ""referenceRange"": [
+    {
+      ""high"": {
+        ""code"": ""mmol/L"",
+        ""system"": ""http://unitsofmeasure.org"",
+        ""unit"": ""mmol/l"",
+        ""value"": 6.2
+      },
+      ""low"": {
+        ""code"": ""mmol/L"",
+        ""system"": ""http://unitsofmeasure.org"",
+        ""unit"": ""mmol/l"",
+        ""value"": 3.1
+      }
+    }
+  ],
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""display"": ""P. van de Heuvel"",
+    ""reference"": ""Patient/f001""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mmol/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mmol/l"",
+    ""value"": 6.3
+  }
+}",inputs/official/gptx-off-004__Observation__f001.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from official_pilot12 seed official-pilot12-09.",exclude_for_now,,GPT-expanded policy: default conservative exclusion until much more of the pending queue is resolved. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+gpt_expanded,gptx-off-004__semi_structured,,,gptx-off-004,official,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,semi_structured,Observation: Glucose [Moles/volume] in Blood | Status: final | Value: 6.3 mmol/l | Effective: 2013-04-02T09:30:10+01:00 | Interpretation: High,"{
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""15074-8"",
+        ""display"": ""Glucose [Moles/volume] in Blood"",
+        ""system"": ""http://loinc.org""
+      }
+    ]
+  },
+  ""effectivePeriod"": {
+    ""start"": ""2013-04-02T09:30:10+01:00""
+  },
+  ""id"": ""f001"",
+  ""identifier"": [
+    {
+      ""system"": ""http://www.bmc.nl/zorgportal/identifiers/observations"",
+      ""use"": ""official"",
+      ""value"": ""6323""
+    }
+  ],
+  ""interpretation"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""H"",
+          ""display"": ""High"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation""
+        }
+      ]
+    }
+  ],
+  ""issued"": ""2013-04-03T15:30:10+01:00"",
+  ""meta"": {
+    ""tag"": [
+      {
+        ""code"": ""HTEST"",
+        ""display"": ""test health data"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""
+      }
+    ]
+  },
+  ""performer"": [
+    {
+      ""display"": ""A. Langeveld"",
+      ""reference"": ""Practitioner/f005""
+    }
+  ],
+  ""referenceRange"": [
+    {
+      ""high"": {
+        ""code"": ""mmol/L"",
+        ""system"": ""http://unitsofmeasure.org"",
+        ""unit"": ""mmol/l"",
+        ""value"": 6.2
+      },
+      ""low"": {
+        ""code"": ""mmol/L"",
+        ""system"": ""http://unitsofmeasure.org"",
+        ""unit"": ""mmol/l"",
+        ""value"": 3.1
+      }
+    }
+  ],
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""display"": ""P. van de Heuvel"",
+    ""reference"": ""Patient/f001""
+  },
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"",
+    ""status"": ""generated""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mmol/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mmol/l"",
+    ""value"": 6.3
+  }
+}",inputs/official/gptx-off-004__Observation__f001.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from official_pilot12 seed official-pilot12-09.",exclude_for_now,,GPT-expanded policy: default conservative exclusion until much more of the pending queue is resolved. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+gpt_expanded,gptx-syn-002__brief_clinical_narrative,,,gptx-syn-002,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Patient,brief_clinical_narrative,Tyson541 Bins636 is a male patient born 1989-10-18. Marital status is Married.,"{
+  ""address"": [
+    {
+      ""city"": ""Lawrence"",
+      ""country"": ""US"",
+      ""extension"": [
+        {
+          ""extension"": [
+            {
+              ""url"": ""latitude"",
+              ""valueDecimal"": 38.93970771004292
+            },
+            {
+              ""url"": ""longitude"",
+              ""valueDecimal"": -95.19277341151493
+            }
+          ],
+          ""url"": ""http://hl7.org/fhir/StructureDefinition/geolocation""
+        }
+      ],
+      ""line"": [
+        ""590 Kuhlman Gateway Unit 26""
+      ],
+      ""postalCode"": ""66045"",
+      ""state"": ""KS""
+    }
+  ],
+  ""birthDate"": ""1989-10-18"",
+  ""communication"": [
+    {
+      ""language"": {
+        ""coding"": [
+          {
+            ""code"": ""en-US"",
+            ""display"": ""English (United States)"",
+            ""system"": ""urn:ietf:bcp:47""
+          }
+        ],
+        ""text"": ""English (United States)""
+      }
+    }
+  ],
+  ""extension"": [
+    {
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""code"": ""2106-3"",
+            ""display"": ""White"",
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""White""
+        }
+      ],
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-race""
+    },
+    {
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""code"": ""2186-5"",
+            ""display"": ""Not Hispanic or Latino"",
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""Not Hispanic or Latino""
+        }
+      ],
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Mira443 Corwin846""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"",
+      ""valueCode"": ""M""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthPlace"",
+      ""valueAddress"": {
+        ""city"": ""Hutchinson"",
+        ""country"": ""US"",
+        ""state"": ""Kansas""
+      }
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/disability-adjusted-life-years"",
+      ""valueDecimal"": 9.15206496405802
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/quality-adjusted-life-years"",
+      ""valueDecimal"": 23.84793503594198
+    }
+  ],
+  ""gender"": ""male"",
+  ""id"": ""0443254f-7306-f744-7ad4-b1675a59ba99"",
+  ""identifier"": [
+    {
+      ""system"": ""https://github.com/synthetichealth/synthea"",
+      ""value"": ""0443254f-7306-f744-7ad4-b1675a59ba99""
+    },
+    {
+      ""system"": ""http://hospital.smarthealthit.org"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""MR"",
+            ""display"": ""Medical Record Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Medical Record Number""
+      },
+      ""value"": ""0443254f-7306-f744-7ad4-b1675a59ba99""
+    },
+    {
+      ""system"": ""http://hl7.org/fhir/sid/us-ssn"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""SS"",
+            ""display"": ""Social Security Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Social Security Number""
+      },
+      ""value"": ""999-72-3999""
+    },
+    {
+      ""system"": ""urn:oid:2.16.840.1.113883.4.3.25"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""DL"",
+            ""display"": ""Driver's license number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Driver's license number""
+      },
+      ""value"": ""S99990648""
+    },
+    {
+      ""system"": ""http://hl7.org/fhir/sid/passport-USA"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""PPN"",
+            ""display"": ""Passport Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Passport Number""
+      },
+      ""value"": ""X80696756X""
+    }
+  ],
+  ""maritalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""M"",
+        ""display"": ""Married"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-MaritalStatus""
+      }
+    ],
+    ""text"": ""Married""
+  },
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient""
+    ]
+  },
+  ""multipleBirthBoolean"": false,
+  ""name"": [
+    {
+      ""family"": ""Bins636"",
+      ""given"": [
+        ""Tyson541""
+      ],
+      ""prefix"": [
+        ""Mr.""
+      ],
+      ""use"": ""official""
+    }
+  ],
+  ""resourceType"": ""Patient"",
+  ""telecom"": [
+    {
+      ""system"": ""phone"",
+      ""use"": ""home"",
+      ""value"": ""555-773-7935""
+    }
+  ],
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Generated by <a href=\""https://github.com/synthetichealth/synthea\"">Synthea</a>.Version identifier: aa0772f\n .   Person seed: 307130222753806148  Population seed: 54321</div>"",
+    ""status"": ""generated""
+  }
+}",inputs/synthea/gptx-syn-002__Patient__0443254f-7306-f744-7ad4-b1675a59ba99.json,flagged_for_review,Patient expression uses only explicit structured identity/demographic fields from the canonical target and intentionally omits extra linked or non-core structured details. Imported target remains unchanged from synthea_pilot50 seed Patient/0443254f-7306-f744-7ad4-b1675a59ba99.,exclude_for_now,,GPT-expanded policy: default conservative exclusion until much more of the pending queue is resolved. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+gpt_expanded,gptx-syn-003__shorthand_clinical_note,,,gptx-syn-003,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Patient,shorthand_clinical_note,pt: Madalyn472 Jamika47 Gottlieb798; sex: female; dob: 1950-01-26; marital: Never Married; status: deceased on 2020-07-17T06:59:08-03:00,"{
+  ""address"": [
+    {
+      ""city"": ""Great Bend"",
+      ""country"": ""US"",
+      ""extension"": [
+        {
+          ""extension"": [
+            {
+              ""url"": ""latitude"",
+              ""valueDecimal"": 38.41718672181192
+            },
+            {
+              ""url"": ""longitude"",
+              ""valueDecimal"": -98.69352982570909
+            }
+          ],
+          ""url"": ""http://hl7.org/fhir/StructureDefinition/geolocation""
+        }
+      ],
+      ""line"": [
+        ""1085 Kuvalis Frontage road Unit 94""
+      ],
+      ""postalCode"": ""67530"",
+      ""state"": ""KS""
+    }
+  ],
+  ""birthDate"": ""1950-01-26"",
+  ""communication"": [
+    {
+      ""language"": {
+        ""coding"": [
+          {
+            ""code"": ""en-US"",
+            ""display"": ""English (United States)"",
+            ""system"": ""urn:ietf:bcp:47""
+          }
+        ],
+        ""text"": ""English (United States)""
+      }
+    }
+  ],
+  ""deceasedDateTime"": ""2020-07-17T06:59:08-03:00"",
+  ""extension"": [
+    {
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""code"": ""2106-3"",
+            ""display"": ""White"",
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""White""
+        }
+      ],
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-race""
+    },
+    {
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""code"": ""2186-5"",
+            ""display"": ""Not Hispanic or Latino"",
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""Not Hispanic or Latino""
+        }
+      ],
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Kathaleen265 Watsica258""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"",
+      ""valueCode"": ""F""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthPlace"",
+      ""valueAddress"": {
+        ""city"": ""Wichita"",
+        ""country"": ""US"",
+        ""state"": ""Kansas""
+      }
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/disability-adjusted-life-years"",
+      ""valueDecimal"": 5.592692030739384
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/quality-adjusted-life-years"",
+      ""valueDecimal"": 63.407307969260614
+    }
+  ],
+  ""gender"": ""female"",
+  ""id"": ""01e8022f-bd3e-b493-9190-3e87e8f94023"",
+  ""identifier"": [
+    {
+      ""system"": ""https://github.com/synthetichealth/synthea"",
+      ""value"": ""01e8022f-bd3e-b493-9190-3e87e8f94023""
+    },
+    {
+      ""system"": ""http://hospital.smarthealthit.org"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""MR"",
+            ""display"": ""Medical Record Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Medical Record Number""
+      },
+      ""value"": ""01e8022f-bd3e-b493-9190-3e87e8f94023""
+    },
+    {
+      ""system"": ""http://hl7.org/fhir/sid/us-ssn"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""SS"",
+            ""display"": ""Social Security Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Social Security Number""
+      },
+      ""value"": ""999-97-7866""
+    },
+    {
+      ""system"": ""urn:oid:2.16.840.1.113883.4.3.25"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""DL"",
+            ""display"": ""Driver's license number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Driver's license number""
+      },
+      ""value"": ""S99910801""
+    },
+    {
+      ""system"": ""http://hl7.org/fhir/sid/passport-USA"",
+      ""type"": {
+        ""coding"": [
+          {
+            ""code"": ""PPN"",
+            ""display"": ""Passport Number"",
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203""
+          }
+        ],
+        ""text"": ""Passport Number""
+      },
+      ""value"": ""X30852945X""
+    }
+  ],
+  ""maritalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""S"",
+        ""display"": ""Never Married"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-MaritalStatus""
+      }
+    ],
+    ""text"": ""Never Married""
+  },
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient""
+    ]
+  },
+  ""multipleBirthBoolean"": false,
+  ""name"": [
+    {
+      ""family"": ""Gottlieb798"",
+      ""given"": [
+        ""Madalyn472"",
+        ""Jamika47""
+      ],
+      ""prefix"": [
+        ""Ms.""
+      ],
+      ""use"": ""official""
+    }
+  ],
+  ""resourceType"": ""Patient"",
+  ""telecom"": [
+    {
+      ""system"": ""phone"",
+      ""use"": ""home"",
+      ""value"": ""555-525-4050""
+    }
+  ],
+  ""text"": {
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Generated by <a href=\""https://github.com/synthetichealth/synthea\"">Synthea</a>.Version identifier: aa0772f\n .   Person seed: 137362192696521875  Population seed: 54321</div>"",
+    ""status"": ""generated""
+  }
+}",inputs/synthea/gptx-syn-003__Patient__01e8022f-bd3e-b493-9190-3e87e8f94023.json,flagged_for_review,Patient expression uses only explicit structured identity/demographic fields from the canonical target and intentionally omits extra linked or non-core structured details. Imported target remains unchanged from synthea_pilot50 seed Patient/01e8022f-bd3e-b493-9190-3e87e8f94023.,exclude_for_now,,GPT-expanded policy: default conservative exclusion until much more of the pending queue is resolved. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+gpt_expanded,gptx-syn-005__shorthand_clinical_note,,,gptx-syn-005,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,shorthand_clinical_note,obs: Respiratory rate; status: final; value: 12 /min; effective: 2013-12-09T14:04:51-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""9279-1"",
+        ""display"": ""Respiratory rate"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Respiratory rate""
+  },
+  ""effectiveDateTime"": ""2013-12-09T14:04:51-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/ed952e46-b99b-88f6-af4c-04a1d25f97ac""
+  },
+  ""id"": ""ed952e46-b99b-88f6-0bc1-8f666074aa32"",
+  ""issued"": ""2013-12-09T14:04:51.798-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/ed952e46-b99b-88f6-5792-ab8cbf8d7b84""
+  },
+  ""valueQuantity"": {
+    ""code"": ""/min"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""/min"",
+    ""value"": 12
+  }
+}",inputs/synthea/gptx-syn-005__Observation__ed952e46-b99b-88f6-0bc1-8f666074aa32.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/ed952e46-b99b-88f6-0bc1-8f666074aa32.",exclude_for_now,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-006__brief_clinical_narrative,,,gptx-syn-006,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,brief_clinical_narrative,Body Weight was recorded as 85.9 kg with final status effective 2021-06-13T08:09:18-04:00.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""vital-signs"",
+          ""display"": ""Vital signs"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""29463-7"",
+        ""display"": ""Body Weight"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Body Weight""
+  },
+  ""effectiveDateTime"": ""2021-06-13T08:09:18-04:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/bc315015-3d2e-19d7-a688-2f39137562f4""
+  },
+  ""id"": ""eb58ee3d-7579-10ba-7029-da628f7bd025"",
+  ""issued"": ""2021-06-13T08:09:18.620-04:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/6cfac06f-9926-607b-4134-60fd14557160""
+  },
+  ""valueQuantity"": {
+    ""code"": ""kg"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""kg"",
+    ""value"": 85.9
+  }
+}",inputs/synthea/gptx-syn-006__Observation__eb58ee3d-7579-10ba-7029-da628f7bd025.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/eb58ee3d-7579-10ba-7029-da628f7bd025.",exclude_for_now,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-008__shorthand_clinical_note,,,gptx-syn-008,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,shorthand_clinical_note,obs: MCH [Entitic mass] by Automated count; status: final; value: 29.994 pg; effective: 2016-11-28T04:52:32-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""785-6"",
+        ""display"": ""MCH [Entitic mass] by Automated count"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""MCH [Entitic mass] by Automated count""
+  },
+  ""effectiveDateTime"": ""2016-11-28T04:52:32-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/b262c778-41c9-499a-f27b-46c55aa1eb51""
+  },
+  ""id"": ""b262c778-41c9-499a-7267-c725c080ddf6"",
+  ""issued"": ""2016-11-28T04:52:32.723-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/b262c778-41c9-499a-54c0-ed167d6a251a""
+  },
+  ""valueQuantity"": {
+    ""code"": ""pg"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""pg"",
+    ""value"": 29.994
+  }
+}",inputs/synthea/gptx-syn-008__Observation__b262c778-41c9-499a-7267-c725c080ddf6.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/b262c778-41c9-499a-7267-c725c080ddf6.",exclude_for_now,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-009__brief_clinical_narrative,,,gptx-syn-009,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,brief_clinical_narrative,pH of Urine by Test strip was recorded as 5.5205 pH with final status effective 2011-06-22T15:38:58-03:00.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""5803-2"",
+        ""display"": ""pH of Urine by Test strip"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""pH of Urine by Test strip""
+  },
+  ""effectiveDateTime"": ""2011-06-22T15:38:58-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/c30f6311-cc84-486f-5668-b5d9c5b2c3a7""
+  },
+  ""id"": ""c30f6311-cc84-486f-64b5-1ee03f48f84e"",
+  ""issued"": ""2011-06-22T15:38:58.140-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/c30f6311-cc84-486f-c751-87b942ca9dbd""
+  },
+  ""valueQuantity"": {
+    ""code"": ""pH"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""pH"",
+    ""value"": 5.5205
+  }
+}",inputs/synthea/gptx-syn-009__Observation__c30f6311-cc84-486f-64b5-1ee03f48f84e.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/c30f6311-cc84-486f-64b5-1ee03f48f84e.",exclude_for_now,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-012__brief_clinical_narrative,,,gptx-syn-012,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,brief_clinical_narrative,Potassium [Moles/volume] in Serum or Plasma was recorded as 4.8 mmol/L with final status effective 2021-01-28T23:07:28-03:00.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""2823-3"",
+        ""display"": ""Potassium [Moles/volume] in Serum or Plasma"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Potassium [Moles/volume] in Serum or Plasma""
+  },
+  ""effectiveDateTime"": ""2021-01-28T23:07:28-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/d0bac5a3-7864-f695-46a2-0b8eaa3cdbe2""
+  },
+  ""id"": ""d0bac5a3-7864-f695-6f7c-8104c0bdf2f8"",
+  ""issued"": ""2021-01-28T23:07:28.623-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/d0bac5a3-7864-f695-1810-177ed19dedf7""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mmol/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mmol/L"",
+    ""value"": 4.8
+  }
+}",inputs/synthea/gptx-syn-012__Observation__d0bac5a3-7864-f695-6f7c-8104c0bdf2f8.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/d0bac5a3-7864-f695-6f7c-8104c0bdf2f8.",exclude_for_now,,GPT-expanded policy: unresolved row is only tentatively salvageable and needs explicit adjudication before use. No adjudication outcome recorded; preliminarily bucketed as repairable because disagreement is disposition-only.,
+gpt_expanded,gptx-syn-012__semi_structured,,,gptx-syn-012,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,semi_structured,Observation: Potassium [Moles/volume] in Serum or Plasma | Status: final | Value: 4.8 mmol/L | Effective: 2021-01-28T23:07:28-03:00,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""2823-3"",
+        ""display"": ""Potassium [Moles/volume] in Serum or Plasma"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Potassium [Moles/volume] in Serum or Plasma""
+  },
+  ""effectiveDateTime"": ""2021-01-28T23:07:28-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/d0bac5a3-7864-f695-46a2-0b8eaa3cdbe2""
+  },
+  ""id"": ""d0bac5a3-7864-f695-6f7c-8104c0bdf2f8"",
+  ""issued"": ""2021-01-28T23:07:28.623-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/d0bac5a3-7864-f695-1810-177ed19dedf7""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mmol/L"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mmol/L"",
+    ""value"": 4.8
+  }
+}",inputs/synthea/gptx-syn-012__Observation__d0bac5a3-7864-f695-6f7c-8104c0bdf2f8.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/d0bac5a3-7864-f695-6f7c-8104c0bdf2f8.",exclude_for_now,,GPT-expanded policy: default conservative exclusion until much more of the pending queue is resolved. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+gpt_expanded,gptx-syn-013__concise_clinical,,,gptx-syn-013,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,concise_clinical,Final Creatinine [Mass/volume] in Serum or Plasma: 2.3846 mg/dL. Effective: 2019-06-24T06:14:43-03:00.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""2160-0"",
+        ""display"": ""Creatinine [Mass/volume] in Serum or Plasma"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Creatinine [Mass/volume] in Serum or Plasma""
+  },
+  ""effectiveDateTime"": ""2019-06-24T06:14:43-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/e8f7e38f-3a74-5f81-2120-f96e20dddf69""
+  },
+  ""id"": ""e8f7e38f-3a74-5f81-e95c-334efa477a3b"",
+  ""issued"": ""2019-06-24T06:14:43.603-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/e8f7e38f-3a74-5f81-6077-3113fe05adce""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mg/dL"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mg/dL"",
+    ""value"": 2.3846
+  }
+}",inputs/synthea/gptx-syn-013__Observation__e8f7e38f-3a74-5f81-e95c-334efa477a3b.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/e8f7e38f-3a74-5f81-e95c-334efa477a3b.",exclude_for_now,,GPT-expanded policy: default conservative exclusion until much more of the pending queue is resolved. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+gpt_expanded,gptx-syn-014__concise_clinical,,,gptx-syn-014,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Observation,concise_clinical,Final Cholesterol [Mass/volume] in Serum or Plasma: 196.73 mg/dL. Effective: 2001-10-09T19:51:20-03:00.,"{
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""laboratory"",
+          ""display"": ""Laboratory"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""2093-3"",
+        ""display"": ""Cholesterol [Mass/volume] in Serum or Plasma"",
+        ""system"": ""http://loinc.org""
+      }
+    ],
+    ""text"": ""Cholesterol [Mass/volume] in Serum or Plasma""
+  },
+  ""effectiveDateTime"": ""2001-10-09T19:51:20-03:00"",
+  ""encounter"": {
+    ""reference"": ""Encounter/16b9fbe2-3ca5-2988-075e-d4709b453397""
+  },
+  ""id"": ""16b9fbe2-3ca5-2988-fe3d-70730ce38371"",
+  ""issued"": ""2001-10-09T19:51:20.673-03:00"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"",
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab""
+    ]
+  },
+  ""resourceType"": ""Observation"",
+  ""status"": ""final"",
+  ""subject"": {
+    ""reference"": ""Patient/16b9fbe2-3ca5-2988-6385-ddd726396505""
+  },
+  ""valueQuantity"": {
+    ""code"": ""mg/dL"",
+    ""system"": ""http://unitsofmeasure.org"",
+    ""unit"": ""mg/dL"",
+    ""value"": 196.73
+  }
+}",inputs/synthea/gptx-syn-014__Observation__16b9fbe2-3ca5-2988-fe3d-70730ce38371.json,flagged_for_review,"Observation expression keeps the exact numeric value and unit from valueQuantity and stays target-local without importing subject, encounter, or performer context. Imported target remains unchanged from synthea_pilot50 seed Observation/16b9fbe2-3ca5-2988-fe3d-70730ce38371.",exclude_for_now,,GPT-expanded policy: default conservative exclusion until much more of the pending queue is resolved. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
+gpt_expanded,gptx-syn-019__brief_clinical_narrative,,,gptx-syn-019,synthea,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,Condition,brief_clinical_narrative,Fracture subluxation of wrist is confirmed and resolved since 2016-08-06T03:04:55-03:00 and ended 2016-10-23T03:27:58-03:00.,"{
+  ""abatementDateTime"": ""2016-10-23T03:27:58-03:00"",
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis"",
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""
+        }
+      ]
+    }
+  ],
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""resolved"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""
+      }
+    ]
+  },
+  ""code"": {
+    ""coding"": [
+      {
+        ""code"": ""263102004"",
+        ""display"": ""Fracture subluxation of wrist (disorder)"",
+        ""system"": ""http://snomed.info/sct""
+      }
+    ],
+    ""text"": ""Fracture subluxation of wrist (disorder)""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/00f9e3dc-c68e-7a7d-3906-38c0ba1c377e""
+  },
+  ""id"": ""00f9e3dc-c68e-7a7d-d3bb-4a79d77acb36"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""onsetDateTime"": ""2016-08-06T03:04:55-03:00"",
+  ""recordedDate"": ""2016-08-06T03:04:55-03:00"",
+  ""resourceType"": ""Condition"",
+  ""subject"": {
+    ""reference"": ""Patient/00f9e3dc-c68e-7a7d-1915-8de466a2f70f""
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""code"": ""confirmed"",
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""
+      }
+    ]
+  }
+}",inputs/synthea/gptx-syn-019__Condition__00f9e3dc-c68e-7a7d-d3bb-4a79d77acb36.json,flagged_for_review,"Condition expression stays limited to the explicit diagnosis text, status fields, onset or abatement, and explicit severity when present; no duration, treatment, or hidden context is added. Imported target remains unchanged from synthea_pilot50 seed Condition/00f9e3dc-c68e-7a7d-d3bb-4a79d77acb36.",exclude_for_now,,GPT-expanded policy: default conservative exclusion until much more of the pending queue is resolved. No adjudication outcome recorded; preliminarily bucketed conservatively due to unsupported/context-leakage/omission risk.,
