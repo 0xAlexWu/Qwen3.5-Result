@@ -1,0 +1,1 @@
+dataset,pair_id_or_candidate_id,pair_id,candidate_id,resource_type,input_style,input_text,target_fhir_json,seed_id,canonical_seed_id,source_origin,target_seed_file,source_file,merged_decision,preliminary_training_bucket,final_decision,final_notes,match_status,review_match_found,content_match_found

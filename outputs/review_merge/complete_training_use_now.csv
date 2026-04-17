@@ -1,0 +1,1785 @@
+dataset,pair_id_or_candidate_id,pair_id,candidate_id,resource_type,input_style,input_text,target_fhir_json,seed_id,canonical_seed_id,source_origin,target_seed_file,source_file,merged_decision,preliminary_training_bucket,final_decision,final_notes
+synthea,pilot50-condition-001__patient_utterance,pilot50-condition-001__patient_utterance,,Condition,patient_utterance,I had gingivitis. It was noted on 2021-04-05. It had resolved by 2021-04-12.,"{
+  ""resourceType"": ""Condition"",
+  ""id"": ""076ce495-0477-ed52-8429-4a68d4e3221f"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical"",
+        ""code"": ""resolved""
+      }
+    ]
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status"",
+        ""code"": ""confirmed""
+      }
+    ]
+  },
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category"",
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""system"": ""http://snomed.info/sct"",
+        ""code"": ""66383009"",
+        ""display"": ""Gingivitis (disorder)""
+      }
+    ],
+    ""text"": ""Gingivitis (disorder)""
+  },
+  ""subject"": {
+    ""reference"": ""Patient/076ce495-0477-ed52-deb8-036703eb987b""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/076ce495-0477-ed52-6b75-211dedaa2b58""
+  },
+  ""onsetDateTime"": ""2021-04-05T12:47:01-03:00"",
+  ""abatementDateTime"": ""2021-04-12T15:12:13-03:00"",
+  ""recordedDate"": ""2021-04-05T12:47:01-03:00""
+}",Condition/076ce495-0477-ed52-8429-4a68d4e3221f,,,sample-bulk-fhir-datasets-1000-patients/Condition.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_001.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,pilot50-condition-002__patient_utterance,pilot50-condition-002__patient_utterance,,Condition,patient_utterance,I had stress. It was noted on 2014-02-08. It had resolved by 2015-01-03.,"{
+  ""resourceType"": ""Condition"",
+  ""id"": ""03d53d8d-0e08-7644-0e04-8983cefa9347"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical"",
+        ""code"": ""resolved""
+      }
+    ]
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status"",
+        ""code"": ""confirmed""
+      }
+    ]
+  },
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category"",
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""system"": ""http://snomed.info/sct"",
+        ""code"": ""73595000"",
+        ""display"": ""Stress (finding)""
+      }
+    ],
+    ""text"": ""Stress (finding)""
+  },
+  ""subject"": {
+    ""reference"": ""Patient/03d53d8d-0e08-7644-0728-54cd513dbbbb""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/03d53d8d-0e08-7644-b448-65bdbbf682a1""
+  },
+  ""onsetDateTime"": ""2014-02-08T19:09:50-03:00"",
+  ""abatementDateTime"": ""2015-01-03T18:52:14-03:00"",
+  ""recordedDate"": ""2014-02-08T19:09:50-03:00""
+}",Condition/03d53d8d-0e08-7644-0e04-8983cefa9347,,,sample-bulk-fhir-datasets-1000-patients/Condition.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_001.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,pilot50-condition-005__patient_utterance,pilot50-condition-005__patient_utterance,,Condition,patient_utterance,I had severe anxiety (panic). It was noted on 2018-03-07. It had resolved by 2019-03-13.,"{
+  ""resourceType"": ""Condition"",
+  ""id"": ""0443254f-7306-f744-c8e4-21524d693623"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical"",
+        ""code"": ""resolved""
+      }
+    ]
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status"",
+        ""code"": ""confirmed""
+      }
+    ]
+  },
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category"",
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""system"": ""http://snomed.info/sct"",
+        ""code"": ""80583007"",
+        ""display"": ""Severe anxiety (panic) (finding)""
+      }
+    ],
+    ""text"": ""Severe anxiety (panic) (finding)""
+  },
+  ""subject"": {
+    ""reference"": ""Patient/0443254f-7306-f744-7ad4-b1675a59ba99""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/0443254f-7306-f744-dba9-2fbd791a8283""
+  },
+  ""onsetDateTime"": ""2018-03-07T00:24:09-03:00"",
+  ""abatementDateTime"": ""2019-03-13T00:22:23-03:00"",
+  ""recordedDate"": ""2018-03-07T00:24:09-03:00""
+}",Condition/0443254f-7306-f744-c8e4-21524d693623,,,sample-bulk-fhir-datasets-1000-patients/Condition.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_002.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,pilot50-condition-006__patient_utterance,pilot50-condition-006__patient_utterance,,Condition,patient_utterance,I had viral sinusitis. It was noted on 2013-10-18. It had resolved by 2013-11-05.,"{
+  ""resourceType"": ""Condition"",
+  ""id"": ""06537fa0-88e4-a5f1-3a0a-9bb49cae9346"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical"",
+        ""code"": ""resolved""
+      }
+    ]
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status"",
+        ""code"": ""confirmed""
+      }
+    ]
+  },
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category"",
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""system"": ""http://snomed.info/sct"",
+        ""code"": ""444814009"",
+        ""display"": ""Viral sinusitis (disorder)""
+      }
+    ],
+    ""text"": ""Viral sinusitis (disorder)""
+  },
+  ""subject"": {
+    ""reference"": ""Patient/06537fa0-88e4-a5f1-03a3-e61aa904a286""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/06537fa0-88e4-a5f1-705c-9fb5bbeecd88""
+  },
+  ""onsetDateTime"": ""2013-10-18T20:15:26-03:00"",
+  ""abatementDateTime"": ""2013-11-05T20:15:26-03:00"",
+  ""recordedDate"": ""2013-10-18T20:15:26-03:00""
+}",Condition/06537fa0-88e4-a5f1-3a0a-9bb49cae9346,,,sample-bulk-fhir-datasets-1000-patients/Condition.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_002.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,pilot50-condition-007__patient_utterance,pilot50-condition-007__patient_utterance,,Condition,patient_utterance,I had wheezing. It was noted on 2020-03-21. It had resolved by 2020-04-05.,"{
+  ""resourceType"": ""Condition"",
+  ""id"": ""0a84f58e-5ab1-0069-da6a-e96017dcfb89"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical"",
+        ""code"": ""resolved""
+      }
+    ]
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status"",
+        ""code"": ""confirmed""
+      }
+    ]
+  },
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category"",
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""system"": ""http://snomed.info/sct"",
+        ""code"": ""56018004"",
+        ""display"": ""Wheezing (finding)""
+      }
+    ],
+    ""text"": ""Wheezing (finding)""
+  },
+  ""subject"": {
+    ""reference"": ""Patient/0a84f58e-5ab1-0069-c060-16e63d5b5b9f""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/0a84f58e-5ab1-0069-92d7-c7bef61074a7""
+  },
+  ""onsetDateTime"": ""2020-03-21T04:53:04-03:00"",
+  ""abatementDateTime"": ""2020-04-05T19:19:30-03:00"",
+  ""recordedDate"": ""2020-03-21T04:53:04-03:00""
+}",Condition/0a84f58e-5ab1-0069-da6a-e96017dcfb89,,,sample-bulk-fhir-datasets-1000-patients/Condition.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_002.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,pilot50-condition-008__patient_utterance,pilot50-condition-008__patient_utterance,,Condition,patient_utterance,I have prediabetes. It was noted on 1997-02-21.,"{
+  ""resourceType"": ""Condition"",
+  ""id"": ""095dd3d9-8eb6-e786-d7f9-686ea6fec31c"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical"",
+        ""code"": ""active""
+      }
+    ]
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status"",
+        ""code"": ""confirmed""
+      }
+    ]
+  },
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category"",
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""system"": ""http://snomed.info/sct"",
+        ""code"": ""714628002"",
+        ""display"": ""Prediabetes (finding)""
+      }
+    ],
+    ""text"": ""Prediabetes (finding)""
+  },
+  ""subject"": {
+    ""reference"": ""Patient/095dd3d9-8eb6-e786-8bfe-4e37c593e014""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/095dd3d9-8eb6-e786-3d2e-b91f71f4d474""
+  },
+  ""onsetDateTime"": ""1997-02-21T18:41:59-03:00"",
+  ""recordedDate"": ""1997-02-21T18:41:59-03:00""
+}",Condition/095dd3d9-8eb6-e786-d7f9-686ea6fec31c,,,sample-bulk-fhir-datasets-1000-patients/Condition.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_003.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,pilot50-condition-009__patient_utterance,pilot50-condition-009__patient_utterance,,Condition,patient_utterance,I had fracture subluxation of wrist. It was noted on 2016-08-06. It had resolved by 2016-10-23.,"{
+  ""resourceType"": ""Condition"",
+  ""id"": ""00f9e3dc-c68e-7a7d-d3bb-4a79d77acb36"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical"",
+        ""code"": ""resolved""
+      }
+    ]
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status"",
+        ""code"": ""confirmed""
+      }
+    ]
+  },
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category"",
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""system"": ""http://snomed.info/sct"",
+        ""code"": ""263102004"",
+        ""display"": ""Fracture subluxation of wrist (disorder)""
+      }
+    ],
+    ""text"": ""Fracture subluxation of wrist (disorder)""
+  },
+  ""subject"": {
+    ""reference"": ""Patient/00f9e3dc-c68e-7a7d-1915-8de466a2f70f""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/00f9e3dc-c68e-7a7d-3906-38c0ba1c377e""
+  },
+  ""onsetDateTime"": ""2016-08-06T03:04:55-03:00"",
+  ""abatementDateTime"": ""2016-10-23T03:27:58-03:00"",
+  ""recordedDate"": ""2016-08-06T03:04:55-03:00""
+}",Condition/00f9e3dc-c68e-7a7d-d3bb-4a79d77acb36,,,sample-bulk-fhir-datasets-1000-patients/Condition.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_003.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,pilot50-condition-010__patient_utterance,pilot50-condition-010__patient_utterance,,Condition,patient_utterance,I have chronic sinusitis. It was noted on 2018-11-15.,"{
+  ""resourceType"": ""Condition"",
+  ""id"": ""08056bc1-b178-1d21-6eda-44840fd1882b"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis""
+    ]
+  },
+  ""clinicalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical"",
+        ""code"": ""active""
+      }
+    ]
+  },
+  ""verificationStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status"",
+        ""code"": ""confirmed""
+      }
+    ]
+  },
+  ""category"": [
+    {
+      ""coding"": [
+        {
+          ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category"",
+          ""code"": ""encounter-diagnosis"",
+          ""display"": ""Encounter Diagnosis""
+        }
+      ]
+    }
+  ],
+  ""code"": {
+    ""coding"": [
+      {
+        ""system"": ""http://snomed.info/sct"",
+        ""code"": ""40055000"",
+        ""display"": ""Chronic sinusitis (disorder)""
+      }
+    ],
+    ""text"": ""Chronic sinusitis (disorder)""
+  },
+  ""subject"": {
+    ""reference"": ""Patient/08056bc1-b178-1d21-c3de-0e659df18a34""
+  },
+  ""encounter"": {
+    ""reference"": ""Encounter/08056bc1-b178-1d21-032d-1ae8460b7185""
+  },
+  ""onsetDateTime"": ""2018-11-15T03:23:03-03:00"",
+  ""recordedDate"": ""2018-11-15T03:23:03-03:00""
+}",Condition/08056bc1-b178-1d21-6eda-44840fd1882b,,,sample-bulk-fhir-datasets-1000-patients/Condition.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_003.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,remaining70-patient-001__concise_clinical,remaining70-patient-001__concise_clinical,,Patient,concise_clinical,"Patient Emogene884 Mila257 Macejkovic424. Gender: female. DOB: 1914-12-02. Location: Wichita, KS, US. Marital status: Divorced. Deceased: yes. Deceased date: 1996-07-31.","{
+  ""resourceType"": ""Patient"",
+  ""id"": ""07066faf-a4af-97d3-0780-89e015322ec5"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient""
+    ]
+  },
+  ""text"": {
+    ""status"": ""generated"",
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Generated by <a href=\""https://github.com/synthetichealth/synthea\"">Synthea</a>.Version identifier: aa0772f\n .   Person seed: 506214808298690515  Population seed: 54321</div>""
+  },
+  ""extension"": [
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"",
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238"",
+            ""code"": ""2106-3"",
+            ""display"": ""White""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""White""
+        }
+      ]
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"",
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238"",
+            ""code"": ""2186-5"",
+            ""display"": ""Not Hispanic or Latino""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""Not Hispanic or Latino""
+        }
+      ]
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Julietta740 Gulgowski816""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"",
+      ""valueCode"": ""F""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthPlace"",
+      ""valueAddress"": {
+        ""city"": ""Valley Center"",
+        ""state"": ""Kansas"",
+        ""country"": ""US""
+      }
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/disability-adjusted-life-years"",
+      ""valueDecimal"": 0.4929733434468192
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/quality-adjusted-life-years"",
+      ""valueDecimal"": 80.50702665655318
+    }
+  ],
+  ""identifier"": [
+    {
+      ""system"": ""https://github.com/synthetichealth/synthea"",
+      ""value"": ""07066faf-a4af-97d3-0780-89e015322ec5""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""MR"",
+            ""display"": ""Medical Record Number""
+          }
+        ],
+        ""text"": ""Medical Record Number""
+      },
+      ""system"": ""http://hospital.smarthealthit.org"",
+      ""value"": ""07066faf-a4af-97d3-0780-89e015322ec5""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""SS"",
+            ""display"": ""Social Security Number""
+          }
+        ],
+        ""text"": ""Social Security Number""
+      },
+      ""system"": ""http://hl7.org/fhir/sid/us-ssn"",
+      ""value"": ""999-11-8731""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""DL"",
+            ""display"": ""Driver's license number""
+          }
+        ],
+        ""text"": ""Driver's license number""
+      },
+      ""system"": ""urn:oid:2.16.840.1.113883.4.3.25"",
+      ""value"": ""S99995107""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""PPN"",
+            ""display"": ""Passport Number""
+          }
+        ],
+        ""text"": ""Passport Number""
+      },
+      ""system"": ""http://hl7.org/fhir/sid/passport-USA"",
+      ""value"": ""X87714157X""
+    }
+  ],
+  ""name"": [
+    {
+      ""use"": ""official"",
+      ""family"": ""Macejkovic424"",
+      ""given"": [
+        ""Emogene884"",
+        ""Mila257""
+      ],
+      ""prefix"": [
+        ""Mrs.""
+      ]
+    },
+    {
+      ""use"": ""maiden"",
+      ""family"": ""Wiza601"",
+      ""given"": [
+        ""Emogene884"",
+        ""Mila257""
+      ],
+      ""prefix"": [
+        ""Mrs.""
+      ]
+    }
+  ],
+  ""telecom"": [
+    {
+      ""system"": ""phone"",
+      ""value"": ""555-426-5514"",
+      ""use"": ""home""
+    }
+  ],
+  ""gender"": ""female"",
+  ""birthDate"": ""1914-12-02"",
+  ""deceasedDateTime"": ""1996-07-31T20:00:58-03:00"",
+  ""address"": [
+    {
+      ""extension"": [
+        {
+          ""url"": ""http://hl7.org/fhir/StructureDefinition/geolocation"",
+          ""extension"": [
+            {
+              ""url"": ""latitude"",
+              ""valueDecimal"": 37.735719064845156
+            },
+            {
+              ""url"": ""longitude"",
+              ""valueDecimal"": -97.33866804080454
+            }
+          ]
+        }
+      ],
+      ""line"": [
+        ""302 Lebsack Gateway Suite 3""
+      ],
+      ""city"": ""Wichita"",
+      ""state"": ""KS"",
+      ""postalCode"": ""67209"",
+      ""country"": ""US""
+    }
+  ],
+  ""maritalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"",
+        ""code"": ""D"",
+        ""display"": ""Divorced""
+      }
+    ],
+    ""text"": ""Divorced""
+  },
+  ""multipleBirthBoolean"": false,
+  ""communication"": [
+    {
+      ""language"": {
+        ""coding"": [
+          {
+            ""system"": ""urn:ietf:bcp:47"",
+            ""code"": ""en-US"",
+            ""display"": ""English (United States)""
+          }
+        ],
+        ""text"": ""English (United States)""
+      }
+    }
+  ]
+}",Patient/07066faf-a4af-97d3-0780-89e015322ec5,,,sample-bulk-fhir-datasets-1000-patients/Patient.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_033.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,remaining70-patient-001__semi_structured,remaining70-patient-001__semi_structured,,Patient,semi_structured,"Name: Emogene884 Mila257 Macejkovic424 | Gender: female | DOB: 1914-12-02 | Location: Wichita, KS, US | Marital status: Divorced | Deceased: yes | DeceasedDate: 1996-07-31","{
+  ""resourceType"": ""Patient"",
+  ""id"": ""07066faf-a4af-97d3-0780-89e015322ec5"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient""
+    ]
+  },
+  ""text"": {
+    ""status"": ""generated"",
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Generated by <a href=\""https://github.com/synthetichealth/synthea\"">Synthea</a>.Version identifier: aa0772f\n .   Person seed: 506214808298690515  Population seed: 54321</div>""
+  },
+  ""extension"": [
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"",
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238"",
+            ""code"": ""2106-3"",
+            ""display"": ""White""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""White""
+        }
+      ]
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"",
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238"",
+            ""code"": ""2186-5"",
+            ""display"": ""Not Hispanic or Latino""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""Not Hispanic or Latino""
+        }
+      ]
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Julietta740 Gulgowski816""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"",
+      ""valueCode"": ""F""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthPlace"",
+      ""valueAddress"": {
+        ""city"": ""Valley Center"",
+        ""state"": ""Kansas"",
+        ""country"": ""US""
+      }
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/disability-adjusted-life-years"",
+      ""valueDecimal"": 0.4929733434468192
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/quality-adjusted-life-years"",
+      ""valueDecimal"": 80.50702665655318
+    }
+  ],
+  ""identifier"": [
+    {
+      ""system"": ""https://github.com/synthetichealth/synthea"",
+      ""value"": ""07066faf-a4af-97d3-0780-89e015322ec5""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""MR"",
+            ""display"": ""Medical Record Number""
+          }
+        ],
+        ""text"": ""Medical Record Number""
+      },
+      ""system"": ""http://hospital.smarthealthit.org"",
+      ""value"": ""07066faf-a4af-97d3-0780-89e015322ec5""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""SS"",
+            ""display"": ""Social Security Number""
+          }
+        ],
+        ""text"": ""Social Security Number""
+      },
+      ""system"": ""http://hl7.org/fhir/sid/us-ssn"",
+      ""value"": ""999-11-8731""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""DL"",
+            ""display"": ""Driver's license number""
+          }
+        ],
+        ""text"": ""Driver's license number""
+      },
+      ""system"": ""urn:oid:2.16.840.1.113883.4.3.25"",
+      ""value"": ""S99995107""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""PPN"",
+            ""display"": ""Passport Number""
+          }
+        ],
+        ""text"": ""Passport Number""
+      },
+      ""system"": ""http://hl7.org/fhir/sid/passport-USA"",
+      ""value"": ""X87714157X""
+    }
+  ],
+  ""name"": [
+    {
+      ""use"": ""official"",
+      ""family"": ""Macejkovic424"",
+      ""given"": [
+        ""Emogene884"",
+        ""Mila257""
+      ],
+      ""prefix"": [
+        ""Mrs.""
+      ]
+    },
+    {
+      ""use"": ""maiden"",
+      ""family"": ""Wiza601"",
+      ""given"": [
+        ""Emogene884"",
+        ""Mila257""
+      ],
+      ""prefix"": [
+        ""Mrs.""
+      ]
+    }
+  ],
+  ""telecom"": [
+    {
+      ""system"": ""phone"",
+      ""value"": ""555-426-5514"",
+      ""use"": ""home""
+    }
+  ],
+  ""gender"": ""female"",
+  ""birthDate"": ""1914-12-02"",
+  ""deceasedDateTime"": ""1996-07-31T20:00:58-03:00"",
+  ""address"": [
+    {
+      ""extension"": [
+        {
+          ""url"": ""http://hl7.org/fhir/StructureDefinition/geolocation"",
+          ""extension"": [
+            {
+              ""url"": ""latitude"",
+              ""valueDecimal"": 37.735719064845156
+            },
+            {
+              ""url"": ""longitude"",
+              ""valueDecimal"": -97.33866804080454
+            }
+          ]
+        }
+      ],
+      ""line"": [
+        ""302 Lebsack Gateway Suite 3""
+      ],
+      ""city"": ""Wichita"",
+      ""state"": ""KS"",
+      ""postalCode"": ""67209"",
+      ""country"": ""US""
+    }
+  ],
+  ""maritalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"",
+        ""code"": ""D"",
+        ""display"": ""Divorced""
+      }
+    ],
+    ""text"": ""Divorced""
+  },
+  ""multipleBirthBoolean"": false,
+  ""communication"": [
+    {
+      ""language"": {
+        ""coding"": [
+          {
+            ""system"": ""urn:ietf:bcp:47"",
+            ""code"": ""en-US"",
+            ""display"": ""English (United States)""
+          }
+        ],
+        ""text"": ""English (United States)""
+      }
+    }
+  ]
+}",Patient/07066faf-a4af-97d3-0780-89e015322ec5,,,sample-bulk-fhir-datasets-1000-patients/Patient.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_033.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,remaining70-patient-002__concise_clinical,remaining70-patient-002__concise_clinical,,Patient,concise_clinical,"Patient Denis399 Noah480 Langworth352. Gender: male. DOB: 1953-02-06. Location: Wellington, KS, US. Marital status: Married. Deceased: yes. Deceased date: 2005-12-27.","{
+  ""resourceType"": ""Patient"",
+  ""id"": ""095dd3d9-8eb6-e786-8bfe-4e37c593e014"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient""
+    ]
+  },
+  ""text"": {
+    ""status"": ""generated"",
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Generated by <a href=\""https://github.com/synthetichealth/synthea\"">Synthea</a>.Version identifier: aa0772f\n .   Person seed: 674928450531157894  Population seed: 54321</div>""
+  },
+  ""extension"": [
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"",
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238"",
+            ""code"": ""2106-3"",
+            ""display"": ""White""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""White""
+        }
+      ]
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"",
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238"",
+            ""code"": ""2186-5"",
+            ""display"": ""Not Hispanic or Latino""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""Not Hispanic or Latino""
+        }
+      ]
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Zonia753 Schaden604""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"",
+      ""valueCode"": ""M""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthPlace"",
+      ""valueAddress"": {
+        ""city"": ""Overland Park"",
+        ""state"": ""Kansas"",
+        ""country"": ""US""
+      }
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/disability-adjusted-life-years"",
+      ""valueDecimal"": 0.05860661681409694
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/quality-adjusted-life-years"",
+      ""valueDecimal"": 50.941393383185904
+    }
+  ],
+  ""identifier"": [
+    {
+      ""system"": ""https://github.com/synthetichealth/synthea"",
+      ""value"": ""095dd3d9-8eb6-e786-8bfe-4e37c593e014""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""MR"",
+            ""display"": ""Medical Record Number""
+          }
+        ],
+        ""text"": ""Medical Record Number""
+      },
+      ""system"": ""http://hospital.smarthealthit.org"",
+      ""value"": ""095dd3d9-8eb6-e786-8bfe-4e37c593e014""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""SS"",
+            ""display"": ""Social Security Number""
+          }
+        ],
+        ""text"": ""Social Security Number""
+      },
+      ""system"": ""http://hl7.org/fhir/sid/us-ssn"",
+      ""value"": ""999-70-1461""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""DL"",
+            ""display"": ""Driver's license number""
+          }
+        ],
+        ""text"": ""Driver's license number""
+      },
+      ""system"": ""urn:oid:2.16.840.1.113883.4.3.25"",
+      ""value"": ""S99954750""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""PPN"",
+            ""display"": ""Passport Number""
+          }
+        ],
+        ""text"": ""Passport Number""
+      },
+      ""system"": ""http://hl7.org/fhir/sid/passport-USA"",
+      ""value"": ""X61388143X""
+    }
+  ],
+  ""name"": [
+    {
+      ""use"": ""official"",
+      ""family"": ""Langworth352"",
+      ""given"": [
+        ""Denis399"",
+        ""Noah480""
+      ],
+      ""prefix"": [
+        ""Mr.""
+      ]
+    }
+  ],
+  ""telecom"": [
+    {
+      ""system"": ""phone"",
+      ""value"": ""555-382-1672"",
+      ""use"": ""home""
+    }
+  ],
+  ""gender"": ""male"",
+  ""birthDate"": ""1953-02-06"",
+  ""deceasedDateTime"": ""2005-12-27T05:41:04-03:00"",
+  ""address"": [
+    {
+      ""extension"": [
+        {
+          ""url"": ""http://hl7.org/fhir/StructureDefinition/geolocation"",
+          ""extension"": [
+            {
+              ""url"": ""latitude"",
+              ""valueDecimal"": 37.23013926950413
+            },
+            {
+              ""url"": ""longitude"",
+              ""valueDecimal"": -97.37978089684495
+            }
+          ]
+        }
+      ],
+      ""line"": [
+        ""460 Stoltenberg Orchard Apt 91""
+      ],
+      ""city"": ""Wellington"",
+      ""state"": ""KS"",
+      ""postalCode"": ""67103"",
+      ""country"": ""US""
+    }
+  ],
+  ""maritalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"",
+        ""code"": ""M"",
+        ""display"": ""Married""
+      }
+    ],
+    ""text"": ""Married""
+  },
+  ""multipleBirthBoolean"": false,
+  ""communication"": [
+    {
+      ""language"": {
+        ""coding"": [
+          {
+            ""system"": ""urn:ietf:bcp:47"",
+            ""code"": ""en-US"",
+            ""display"": ""English (United States)""
+          }
+        ],
+        ""text"": ""English (United States)""
+      }
+    }
+  ]
+}",Patient/095dd3d9-8eb6-e786-8bfe-4e37c593e014,,,sample-bulk-fhir-datasets-1000-patients/Patient.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_033.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,remaining70-patient-002__semi_structured,remaining70-patient-002__semi_structured,,Patient,semi_structured,"Name: Denis399 Noah480 Langworth352 | Gender: male | DOB: 1953-02-06 | Location: Wellington, KS, US | Marital status: Married | Deceased: yes | DeceasedDate: 2005-12-27","{
+  ""resourceType"": ""Patient"",
+  ""id"": ""095dd3d9-8eb6-e786-8bfe-4e37c593e014"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient""
+    ]
+  },
+  ""text"": {
+    ""status"": ""generated"",
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Generated by <a href=\""https://github.com/synthetichealth/synthea\"">Synthea</a>.Version identifier: aa0772f\n .   Person seed: 674928450531157894  Population seed: 54321</div>""
+  },
+  ""extension"": [
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"",
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238"",
+            ""code"": ""2106-3"",
+            ""display"": ""White""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""White""
+        }
+      ]
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"",
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238"",
+            ""code"": ""2186-5"",
+            ""display"": ""Not Hispanic or Latino""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""Not Hispanic or Latino""
+        }
+      ]
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Zonia753 Schaden604""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"",
+      ""valueCode"": ""M""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthPlace"",
+      ""valueAddress"": {
+        ""city"": ""Overland Park"",
+        ""state"": ""Kansas"",
+        ""country"": ""US""
+      }
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/disability-adjusted-life-years"",
+      ""valueDecimal"": 0.05860661681409694
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/quality-adjusted-life-years"",
+      ""valueDecimal"": 50.941393383185904
+    }
+  ],
+  ""identifier"": [
+    {
+      ""system"": ""https://github.com/synthetichealth/synthea"",
+      ""value"": ""095dd3d9-8eb6-e786-8bfe-4e37c593e014""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""MR"",
+            ""display"": ""Medical Record Number""
+          }
+        ],
+        ""text"": ""Medical Record Number""
+      },
+      ""system"": ""http://hospital.smarthealthit.org"",
+      ""value"": ""095dd3d9-8eb6-e786-8bfe-4e37c593e014""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""SS"",
+            ""display"": ""Social Security Number""
+          }
+        ],
+        ""text"": ""Social Security Number""
+      },
+      ""system"": ""http://hl7.org/fhir/sid/us-ssn"",
+      ""value"": ""999-70-1461""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""DL"",
+            ""display"": ""Driver's license number""
+          }
+        ],
+        ""text"": ""Driver's license number""
+      },
+      ""system"": ""urn:oid:2.16.840.1.113883.4.3.25"",
+      ""value"": ""S99954750""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""PPN"",
+            ""display"": ""Passport Number""
+          }
+        ],
+        ""text"": ""Passport Number""
+      },
+      ""system"": ""http://hl7.org/fhir/sid/passport-USA"",
+      ""value"": ""X61388143X""
+    }
+  ],
+  ""name"": [
+    {
+      ""use"": ""official"",
+      ""family"": ""Langworth352"",
+      ""given"": [
+        ""Denis399"",
+        ""Noah480""
+      ],
+      ""prefix"": [
+        ""Mr.""
+      ]
+    }
+  ],
+  ""telecom"": [
+    {
+      ""system"": ""phone"",
+      ""value"": ""555-382-1672"",
+      ""use"": ""home""
+    }
+  ],
+  ""gender"": ""male"",
+  ""birthDate"": ""1953-02-06"",
+  ""deceasedDateTime"": ""2005-12-27T05:41:04-03:00"",
+  ""address"": [
+    {
+      ""extension"": [
+        {
+          ""url"": ""http://hl7.org/fhir/StructureDefinition/geolocation"",
+          ""extension"": [
+            {
+              ""url"": ""latitude"",
+              ""valueDecimal"": 37.23013926950413
+            },
+            {
+              ""url"": ""longitude"",
+              ""valueDecimal"": -97.37978089684495
+            }
+          ]
+        }
+      ],
+      ""line"": [
+        ""460 Stoltenberg Orchard Apt 91""
+      ],
+      ""city"": ""Wellington"",
+      ""state"": ""KS"",
+      ""postalCode"": ""67103"",
+      ""country"": ""US""
+    }
+  ],
+  ""maritalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"",
+        ""code"": ""M"",
+        ""display"": ""Married""
+      }
+    ],
+    ""text"": ""Married""
+  },
+  ""multipleBirthBoolean"": false,
+  ""communication"": [
+    {
+      ""language"": {
+        ""coding"": [
+          {
+            ""system"": ""urn:ietf:bcp:47"",
+            ""code"": ""en-US"",
+            ""display"": ""English (United States)""
+          }
+        ],
+        ""text"": ""English (United States)""
+      }
+    }
+  ]
+}",Patient/095dd3d9-8eb6-e786-8bfe-4e37c593e014,,,sample-bulk-fhir-datasets-1000-patients/Patient.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_033.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,remaining70-patient-003__concise_clinical,remaining70-patient-003__concise_clinical,,Patient,concise_clinical,"Patient Branda994 Shyla233 Gerhold939. Gender: female. DOB: 1914-12-02. Location: Wichita, KS, US. Marital status: Married. Deceased: yes. Deceased date: 2010-04-16.","{
+  ""resourceType"": ""Patient"",
+  ""id"": ""01867dda-3c09-6717-00e7-92fa7be373b3"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient""
+    ]
+  },
+  ""text"": {
+    ""status"": ""generated"",
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Generated by <a href=\""https://github.com/synthetichealth/synthea\"">Synthea</a>.Version identifier: aa0772f\n .   Person seed: 109913617180747543  Population seed: 54321</div>""
+  },
+  ""extension"": [
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"",
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238"",
+            ""code"": ""2106-3"",
+            ""display"": ""White""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""White""
+        }
+      ]
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"",
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238"",
+            ""code"": ""2186-5"",
+            ""display"": ""Not Hispanic or Latino""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""Not Hispanic or Latino""
+        }
+      ]
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Sumiko254 Cummings51""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"",
+      ""valueCode"": ""F""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthPlace"",
+      ""valueAddress"": {
+        ""city"": ""Leawood"",
+        ""state"": ""Kansas"",
+        ""country"": ""US""
+      }
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/disability-adjusted-life-years"",
+      ""valueDecimal"": 21.57527091663167
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/quality-adjusted-life-years"",
+      ""valueDecimal"": 73.42472908336833
+    }
+  ],
+  ""identifier"": [
+    {
+      ""system"": ""https://github.com/synthetichealth/synthea"",
+      ""value"": ""01867dda-3c09-6717-00e7-92fa7be373b3""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""MR"",
+            ""display"": ""Medical Record Number""
+          }
+        ],
+        ""text"": ""Medical Record Number""
+      },
+      ""system"": ""http://hospital.smarthealthit.org"",
+      ""value"": ""01867dda-3c09-6717-00e7-92fa7be373b3""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""SS"",
+            ""display"": ""Social Security Number""
+          }
+        ],
+        ""text"": ""Social Security Number""
+      },
+      ""system"": ""http://hl7.org/fhir/sid/us-ssn"",
+      ""value"": ""999-73-4384""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""DL"",
+            ""display"": ""Driver's license number""
+          }
+        ],
+        ""text"": ""Driver's license number""
+      },
+      ""system"": ""urn:oid:2.16.840.1.113883.4.3.25"",
+      ""value"": ""S99976531""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""PPN"",
+            ""display"": ""Passport Number""
+          }
+        ],
+        ""text"": ""Passport Number""
+      },
+      ""system"": ""http://hl7.org/fhir/sid/passport-USA"",
+      ""value"": ""X79945152X""
+    }
+  ],
+  ""name"": [
+    {
+      ""use"": ""official"",
+      ""family"": ""Gerhold939"",
+      ""given"": [
+        ""Branda994"",
+        ""Shyla233""
+      ],
+      ""prefix"": [
+        ""Mrs.""
+      ]
+    },
+    {
+      ""use"": ""maiden"",
+      ""family"": ""Hilpert278"",
+      ""given"": [
+        ""Branda994"",
+        ""Shyla233""
+      ],
+      ""prefix"": [
+        ""Mrs.""
+      ]
+    }
+  ],
+  ""telecom"": [
+    {
+      ""system"": ""phone"",
+      ""value"": ""555-738-4000"",
+      ""use"": ""home""
+    }
+  ],
+  ""gender"": ""female"",
+  ""birthDate"": ""1914-12-02"",
+  ""deceasedDateTime"": ""2010-04-16T19:08:24-03:00"",
+  ""address"": [
+    {
+      ""extension"": [
+        {
+          ""url"": ""http://hl7.org/fhir/StructureDefinition/geolocation"",
+          ""extension"": [
+            {
+              ""url"": ""latitude"",
+              ""valueDecimal"": 37.685253147889114
+            },
+            {
+              ""url"": ""longitude"",
+              ""valueDecimal"": -97.40138401056599
+            }
+          ]
+        }
+      ],
+      ""line"": [
+        ""334 D'Amore Vale Apt 25""
+      ],
+      ""city"": ""Wichita"",
+      ""state"": ""KS"",
+      ""postalCode"": ""67210"",
+      ""country"": ""US""
+    }
+  ],
+  ""maritalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"",
+        ""code"": ""M"",
+        ""display"": ""Married""
+      }
+    ],
+    ""text"": ""Married""
+  },
+  ""multipleBirthBoolean"": false,
+  ""communication"": [
+    {
+      ""language"": {
+        ""coding"": [
+          {
+            ""system"": ""urn:ietf:bcp:47"",
+            ""code"": ""en-US"",
+            ""display"": ""English (United States)""
+          }
+        ],
+        ""text"": ""English (United States)""
+      }
+    }
+  ]
+}",Patient/01867dda-3c09-6717-00e7-92fa7be373b3,,,sample-bulk-fhir-datasets-1000-patients/Patient.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_033.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+synthea,remaining70-patient-003__semi_structured,remaining70-patient-003__semi_structured,,Patient,semi_structured,"Name: Branda994 Shyla233 Gerhold939 | Gender: female | DOB: 1914-12-02 | Location: Wichita, KS, US | Marital status: Married | Deceased: yes | DeceasedDate: 2010-04-16","{
+  ""resourceType"": ""Patient"",
+  ""id"": ""01867dda-3c09-6717-00e7-92fa7be373b3"",
+  ""meta"": {
+    ""profile"": [
+      ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient""
+    ]
+  },
+  ""text"": {
+    ""status"": ""generated"",
+    ""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Generated by <a href=\""https://github.com/synthetichealth/synthea\"">Synthea</a>.Version identifier: aa0772f\n .   Person seed: 109913617180747543  Population seed: 54321</div>""
+  },
+  ""extension"": [
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"",
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238"",
+            ""code"": ""2106-3"",
+            ""display"": ""White""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""White""
+        }
+      ]
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"",
+      ""extension"": [
+        {
+          ""url"": ""ombCategory"",
+          ""valueCoding"": {
+            ""system"": ""urn:oid:2.16.840.1.113883.6.238"",
+            ""code"": ""2186-5"",
+            ""display"": ""Not Hispanic or Latino""
+          }
+        },
+        {
+          ""url"": ""text"",
+          ""valueString"": ""Not Hispanic or Latino""
+        }
+      ]
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"",
+      ""valueString"": ""Sumiko254 Cummings51""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"",
+      ""valueCode"": ""F""
+    },
+    {
+      ""url"": ""http://hl7.org/fhir/StructureDefinition/patient-birthPlace"",
+      ""valueAddress"": {
+        ""city"": ""Leawood"",
+        ""state"": ""Kansas"",
+        ""country"": ""US""
+      }
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/disability-adjusted-life-years"",
+      ""valueDecimal"": 21.57527091663167
+    },
+    {
+      ""url"": ""http://synthetichealth.github.io/synthea/quality-adjusted-life-years"",
+      ""valueDecimal"": 73.42472908336833
+    }
+  ],
+  ""identifier"": [
+    {
+      ""system"": ""https://github.com/synthetichealth/synthea"",
+      ""value"": ""01867dda-3c09-6717-00e7-92fa7be373b3""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""MR"",
+            ""display"": ""Medical Record Number""
+          }
+        ],
+        ""text"": ""Medical Record Number""
+      },
+      ""system"": ""http://hospital.smarthealthit.org"",
+      ""value"": ""01867dda-3c09-6717-00e7-92fa7be373b3""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""SS"",
+            ""display"": ""Social Security Number""
+          }
+        ],
+        ""text"": ""Social Security Number""
+      },
+      ""system"": ""http://hl7.org/fhir/sid/us-ssn"",
+      ""value"": ""999-73-4384""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""DL"",
+            ""display"": ""Driver's license number""
+          }
+        ],
+        ""text"": ""Driver's license number""
+      },
+      ""system"": ""urn:oid:2.16.840.1.113883.4.3.25"",
+      ""value"": ""S99976531""
+    },
+    {
+      ""type"": {
+        ""coding"": [
+          {
+            ""system"": ""http://terminology.hl7.org/CodeSystem/v2-0203"",
+            ""code"": ""PPN"",
+            ""display"": ""Passport Number""
+          }
+        ],
+        ""text"": ""Passport Number""
+      },
+      ""system"": ""http://hl7.org/fhir/sid/passport-USA"",
+      ""value"": ""X79945152X""
+    }
+  ],
+  ""name"": [
+    {
+      ""use"": ""official"",
+      ""family"": ""Gerhold939"",
+      ""given"": [
+        ""Branda994"",
+        ""Shyla233""
+      ],
+      ""prefix"": [
+        ""Mrs.""
+      ]
+    },
+    {
+      ""use"": ""maiden"",
+      ""family"": ""Hilpert278"",
+      ""given"": [
+        ""Branda994"",
+        ""Shyla233""
+      ],
+      ""prefix"": [
+        ""Mrs.""
+      ]
+    }
+  ],
+  ""telecom"": [
+    {
+      ""system"": ""phone"",
+      ""value"": ""555-738-4000"",
+      ""use"": ""home""
+    }
+  ],
+  ""gender"": ""female"",
+  ""birthDate"": ""1914-12-02"",
+  ""deceasedDateTime"": ""2010-04-16T19:08:24-03:00"",
+  ""address"": [
+    {
+      ""extension"": [
+        {
+          ""url"": ""http://hl7.org/fhir/StructureDefinition/geolocation"",
+          ""extension"": [
+            {
+              ""url"": ""latitude"",
+              ""valueDecimal"": 37.685253147889114
+            },
+            {
+              ""url"": ""longitude"",
+              ""valueDecimal"": -97.40138401056599
+            }
+          ]
+        }
+      ],
+      ""line"": [
+        ""334 D'Amore Vale Apt 25""
+      ],
+      ""city"": ""Wichita"",
+      ""state"": ""KS"",
+      ""postalCode"": ""67210"",
+      ""country"": ""US""
+    }
+  ],
+  ""maritalStatus"": {
+    ""coding"": [
+      {
+        ""system"": ""http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"",
+        ""code"": ""M"",
+        ""display"": ""Married""
+      }
+    ],
+    ""text"": ""Married""
+  },
+  ""multipleBirthBoolean"": false,
+  ""communication"": [
+    {
+      ""language"": {
+        ""coding"": [
+          {
+            ""system"": ""urn:ietf:bcp:47"",
+            ""code"": ""en-US"",
+            ""display"": ""English (United States)""
+          }
+        ],
+        ""text"": ""English (United States)""
+      }
+    }
+  ]
+}",Patient/01867dda-3c09-6717-00e7-92fa7be373b3,,,sample-bulk-fhir-datasets-1000-patients/Patient.000.ndjson,upstream_repos/FHIR-Synthea-Seeds/outputs/large/reviewer_batch_prompts/review_batch_033.txt,keep,use_now,keep,Synthea policy: agreed clean row is ready for immediate formal training use. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-09-concise_clinical,NHANES-P15-09-concise_clinical,,Observation,concise_clinical,Systolic: Blood pres: 112 mm Hg,"{""code"": {""text"": ""Systolic: Blood pres""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93706""}}, ""valueQuantity"": {""unit"": ""mm Hg"", ""value"": 112}}",NHANES-P15-09,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-09-semi_structured,NHANES-P15-09-semi_structured,,Observation,semi_structured,"BPX_J
+participant: 93706
+measure = Systolic: Blood pres
+value = 112
+unit = mm Hg","{""code"": {""text"": ""Systolic: Blood pres""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93706""}}, ""valueQuantity"": {""unit"": ""mm Hg"", ""value"": 112}}",NHANES-P15-09,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-10-concise_clinical,NHANES-P15-10-concise_clinical,,Observation,concise_clinical,Diastolic: Blood pres: 38 mm Hg,"{""code"": {""text"": ""Diastolic: Blood pres""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93707""}}, ""valueQuantity"": {""unit"": ""mm Hg"", ""value"": 38}}",NHANES-P15-10,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-10-semi_structured,NHANES-P15-10-semi_structured,,Observation,semi_structured,"BPX_J
+participant: 93707
+measure = Diastolic: Blood pres
+value = 38
+unit = mm Hg","{""code"": {""text"": ""Diastolic: Blood pres""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93707""}}, ""valueQuantity"": {""unit"": ""mm Hg"", ""value"": 38}}",NHANES-P15-10,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-11-concise_clinical,NHANES-P15-11-concise_clinical,,Observation,concise_clinical,Glycohemoglobin: 6.2 %,"{""code"": {""text"": ""Glycohemoglobin""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93708""}}, ""valueQuantity"": {""unit"": ""%"", ""value"": 6.2}}",NHANES-P15-11,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-11-semi_structured,NHANES-P15-11-semi_structured,,Observation,semi_structured,"GHB_J
+participant: 93708
+measure = Glycohemoglobin
+value = 6.2
+unit = %","{""code"": {""text"": ""Glycohemoglobin""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93708""}}, ""valueQuantity"": {""unit"": ""%"", ""value"": 6.2}}",NHANES-P15-11,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-12-concise_clinical,NHANES-P15-12-concise_clinical,,Observation,concise_clinical,Total Cholesterol: 176 mg/dL,"{""code"": {""text"": ""Total Cholesterol""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93709""}}, ""valueQuantity"": {""unit"": ""mg/dL"", ""value"": 176}}",NHANES-P15-12,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-12-semi_structured,NHANES-P15-12-semi_structured,,Observation,semi_structured,"TCHOL_J
+participant: 93709
+measure = Total Cholesterol
+value = 176
+unit = mg/dL","{""code"": {""text"": ""Total Cholesterol""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93709""}}, ""valueQuantity"": {""unit"": ""mg/dL"", ""value"": 176}}",NHANES-P15-12,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-13-concise_clinical,NHANES-P15-13-concise_clinical,,Observation,concise_clinical,"Creatinine, refrigerated serum: 0.77 mg/dL","{""code"": {""text"": ""Creatinine, refrigerated serum""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93712""}}, ""valueQuantity"": {""unit"": ""mg/dL"", ""value"": 0.77}}",NHANES-P15-13,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-13-semi_structured,NHANES-P15-13-semi_structured,,Observation,semi_structured,"BIOPRO_J
+participant: 93712
+measure = Creatinine, refrigerated serum
+value = 0.77
+unit = mg/dL","{""code"": {""text"": ""Creatinine, refrigerated serum""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93712""}}, ""valueQuantity"": {""unit"": ""mg/dL"", ""value"": 0.77}}",NHANES-P15-13,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-14-concise_clinical,NHANES-P15-14-concise_clinical,,Observation,concise_clinical,"Albumin, refrigerated serum: 4.3 g/dL","{""code"": {""text"": ""Albumin, refrigerated serum""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93713""}}, ""valueQuantity"": {""unit"": ""g/dL"", ""value"": 4.3}}",NHANES-P15-14,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-14-semi_structured,NHANES-P15-14-semi_structured,,Observation,semi_structured,"BIOPRO_J
+participant: 93713
+measure = Albumin, refrigerated serum
+value = 4.3
+unit = g/dL","{""code"": {""text"": ""Albumin, refrigerated serum""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93713""}}, ""valueQuantity"": {""unit"": ""g/dL"", ""value"": 4.3}}",NHANES-P15-14,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-15-concise_clinical,NHANES-P15-15-concise_clinical,,Observation,concise_clinical,Total Calcium: 9.1 mg/dL,"{""code"": {""text"": ""Total Calcium""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93714""}}, ""valueQuantity"": {""unit"": ""mg/dL"", ""value"": 9.1}}",NHANES-P15-15,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+nhanes,NHANES-P15-15-semi_structured,NHANES-P15-15-semi_structured,,Observation,semi_structured,"BIOPRO_J
+participant: 93714
+measure = Total Calcium
+value = 9.1
+unit = mg/dL","{""code"": {""text"": ""Total Calcium""}, ""resourceType"": ""Observation"", ""subject"": {""identifier"": {""value"": ""93714""}}, ""valueQuantity"": {""unit"": ""mg/dL"", ""value"": 9.1}}",NHANES-P15-15,,,outputs/nhanes/nhanes_pilot15_selected.csv,upstream_repos/FHIR-NHANES-Seeds/outputs/nhanes/nhanes_pilot15_pair_candidates.csv,keep,use_now,keep,NHANES policy: clean non-pending row may enter training now. Final decision carried from merged_decision=keep.
+gpt_expanded,gptx-off-001__concise_clinical,gptx-off-001__concise_clinical,,Patient,concise_clinical,"Active patient ALBERT BROOKS, identifier AB60001.","{""active"": true, ""id"": ""ihe-pcd"", ""identifier"": [{""type"": {""text"": ""Internal Identifier""}, ""value"": ""AB60001""}], ""meta"": {""tag"": [{""code"": ""HTEST"", ""display"": ""test health data"", ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""}]}, ""name"": [{""family"": ""BROOKS"", ""given"": [""ALBERT""]}], ""resourceType"": ""Patient"", ""text"": {""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Albert Brooks, Id: AB60001</div>"", ""status"": ""generated""}}",,gptx-off-001,official,inputs/official/gptx-off-001__Patient__ihe-pcd.json,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,keep,use_now,keep,"Row-level keep is clean, but GPT-expanded as a dataset line is still not backbone-ready. Final decision carried from merged_decision=keep."
+gpt_expanded,gptx-off-001__semi_structured,gptx-off-001__semi_structured,,Patient,semi_structured,Patient | Name: ALBERT BROOKS | Identifier: AB60001 | Active: true,"{""active"": true, ""id"": ""ihe-pcd"", ""identifier"": [{""type"": {""text"": ""Internal Identifier""}, ""value"": ""AB60001""}], ""meta"": {""tag"": [{""code"": ""HTEST"", ""display"": ""test health data"", ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""}]}, ""name"": [{""family"": ""BROOKS"", ""given"": [""ALBERT""]}], ""resourceType"": ""Patient"", ""text"": {""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Albert Brooks, Id: AB60001</div>"", ""status"": ""generated""}}",,gptx-off-001,official,inputs/official/gptx-off-001__Patient__ihe-pcd.json,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,keep,use_now,keep,"Row-level keep is clean, but GPT-expanded as a dataset line is still not backbone-ready. Final decision carried from merged_decision=keep."
+gpt_expanded,gptx-off-003__concise_clinical,gptx-off-003__concise_clinical,,Observation,concise_clinical,Final Body temperature: 36.5 C. Effective: 1999-07-02.,"{""category"": [{""coding"": [{""code"": ""vital-signs"", ""display"": ""Vital Signs"", ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""}], ""text"": ""Vital Signs""}], ""code"": {""coding"": [{""code"": ""8310-5"", ""display"": ""Body temperature"", ""system"": ""http://loinc.org""}], ""text"": ""Body temperature""}, ""effectiveDateTime"": ""1999-07-02"", ""id"": ""body-temperature"", ""meta"": {""profile"": [""http://hl7.org/fhir/StructureDefinition/vitalsigns""], ""tag"": [{""code"": ""HTEST"", ""display"": ""test health data"", ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""}]}, ""resourceType"": ""Observation"", ""status"": ""final"", ""subject"": {""reference"": ""Patient/example""}, ""text"": {""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: body-temperature</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Body temperature <span>(Details : {LOINC code '8310-5' = 'Body temperature', given as 'Body temperature'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 36.5 C<span> (Details: UCUM code Cel = 'Cel')</span></p></div>"", ""status"": ""generated""}, ""valueQuantity"": {""code"": ""Cel"", ""system"": ""http://unitsofmeasure.org"", ""unit"": ""C"", ""value"": 36.5}}",,gptx-off-003,official,inputs/official/gptx-off-003__Observation__body-temperature.json,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,keep,use_now,keep,"Row-level keep is clean, but GPT-expanded as a dataset line is still not backbone-ready. Final decision carried from merged_decision=keep."
+gpt_expanded,gptx-off-003__semi_structured,gptx-off-003__semi_structured,,Observation,semi_structured,Observation: Body temperature | Status: final | Value: 36.5 C | Effective: 1999-07-02,"{""category"": [{""coding"": [{""code"": ""vital-signs"", ""display"": ""Vital Signs"", ""system"": ""http://terminology.hl7.org/CodeSystem/observation-category""}], ""text"": ""Vital Signs""}], ""code"": {""coding"": [{""code"": ""8310-5"", ""display"": ""Body temperature"", ""system"": ""http://loinc.org""}], ""text"": ""Body temperature""}, ""effectiveDateTime"": ""1999-07-02"", ""id"": ""body-temperature"", ""meta"": {""profile"": [""http://hl7.org/fhir/StructureDefinition/vitalsigns""], ""tag"": [{""code"": ""HTEST"", ""display"": ""test health data"", ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""}]}, ""resourceType"": ""Observation"", ""status"": ""final"", ""subject"": {""reference"": ""Patient/example""}, ""text"": {""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\""><p><b>Generated Narrative with Details</b></p><p><b>id</b>: body-temperature</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Body temperature <span>(Details : {LOINC code '8310-5' = 'Body temperature', given as 'Body temperature'})</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 02/07/1999</p><p><b>value</b>: 36.5 C<span> (Details: UCUM code Cel = 'Cel')</span></p></div>"", ""status"": ""generated""}, ""valueQuantity"": {""code"": ""Cel"", ""system"": ""http://unitsofmeasure.org"", ""unit"": ""C"", ""value"": 36.5}}",,gptx-off-003,official,inputs/official/gptx-off-003__Observation__body-temperature.json,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,keep,use_now,keep,"Row-level keep is clean, but GPT-expanded as a dataset line is still not backbone-ready. Final decision carried from merged_decision=keep."
+gpt_expanded,gptx-off-006__brief_clinical_narrative,gptx-off-006__brief_clinical_narrative,,Condition,brief_clinical_narrative,Asthma is confirmed and active with Mild severity since approximately November 2012.,"{""category"": [{""coding"": [{""code"": ""problem-list-item"", ""display"": ""Problem List Item"", ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""}]}], ""clinicalStatus"": {""coding"": [{""code"": ""active"", ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""}]}, ""code"": {""text"": ""Asthma""}, ""id"": ""example2"", ""meta"": {""tag"": [{""code"": ""HTEST"", ""display"": ""test health data"", ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""}]}, ""onsetString"": ""approximately November 2012"", ""resourceType"": ""Condition"", ""severity"": {""coding"": [{""code"": ""255604002"", ""display"": ""Mild"", ""system"": ""http://snomed.info/sct""}]}, ""subject"": {""reference"": ""Patient/example""}, ""text"": {""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Mild Asthma (Date: 12-Nov 2012)</div>"", ""status"": ""generated""}, ""verificationStatus"": {""coding"": [{""code"": ""confirmed"", ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""}]}}",,gptx-off-006,official,inputs/official/gptx-off-006__Condition__example2.json,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,keep,use_now,keep,"Row-level keep is clean, but GPT-expanded as a dataset line is still not backbone-ready. Final decision carried from merged_decision=keep."
+gpt_expanded,gptx-off-006__brief_clinical_narrative,gptx-off-006__brief_clinical_narrative,,Condition,brief_clinical_narrative,Asthma is confirmed and active with Mild severity since approximately November 2012.,"{""category"": [{""coding"": [{""code"": ""problem-list-item"", ""display"": ""Problem List Item"", ""system"": ""http://terminology.hl7.org/CodeSystem/condition-category""}]}], ""clinicalStatus"": {""coding"": [{""code"": ""active"", ""system"": ""http://terminology.hl7.org/CodeSystem/condition-clinical""}]}, ""code"": {""text"": ""Asthma""}, ""id"": ""example2"", ""meta"": {""tag"": [{""code"": ""HTEST"", ""display"": ""test health data"", ""system"": ""http://terminology.hl7.org/CodeSystem/v3-ActReason""}]}, ""onsetString"": ""approximately November 2012"", ""resourceType"": ""Condition"", ""severity"": {""coding"": [{""code"": ""255604002"", ""display"": ""Mild"", ""system"": ""http://snomed.info/sct""}]}, ""subject"": {""reference"": ""Patient/example""}, ""text"": {""div"": ""<div xmlns=\""http://www.w3.org/1999/xhtml\"">Mild Asthma (Date: 12-Nov 2012)</div>"", ""status"": ""generated""}, ""verificationStatus"": {""coding"": [{""code"": ""confirmed"", ""system"": ""http://terminology.hl7.org/CodeSystem/condition-ver-status""}]}}",,gptx-off-006,official,inputs/official/gptx-off-006__Condition__example2.json,upstream_repos/FHIR-GPT-Seeds/outputs/gpt_expanded/gpt_expanded_pair_candidates.csv,keep,use_now,keep,"Row-level keep is clean, but GPT-expanded as a dataset line is still not backbone-ready. Final decision carried from merged_decision=keep."
