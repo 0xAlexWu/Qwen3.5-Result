@@ -1,0 +1,6 @@
+dataset,original_use_now_count,original_use_after_revision_count,original_exclude_for_now_count,promoted_use_after_revision_count,retained_demo_only_count,target_final_pair_count,expansion_factor,rationale
+synthea,14,0,0,0,0,1200,85.71,Backbone scale source. Uses all Synthea use_now rows and expands aggressively through source-only wrappers/reformats with targets frozen.
+official,0,2,14,0,0,0,0.00,"No formal contribution: there are no use_now rows, and the two revision rows were not promoted because target references such as subject/performer are not fully supported by the paired input."
+nhanes,14,6,0,6,0,600,30.00,Moderate semi-structured realism source. Uses all use_now rows and six Patient use_after_revision rows promoted only under the documented disposition-only rule.
+gpt_expanded,5,18,14,0,0,200,40.00,Capped auxiliary diversity source. Uses only the five use_now rows; unresolved GPT revision rows remain held out.
+mimic_eicu,0,0,14,0,0,0,0.00,"Excluded from formal 2,000-row corpus because all rows are demo-only or exclude_for_now; no low-weight realism subset retained."
