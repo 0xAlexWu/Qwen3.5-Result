@@ -1,0 +1,6 @@
+dataset,use_now_count,use_after_revision_count,exclude_for_now_count,total_reviewed_rows
+synthea,14,0,0,14
+official,0,2,14,16
+nhanes,14,6,0,20
+gpt_expanded,6,28,15,49
+mimic_eicu,0,0,14,14

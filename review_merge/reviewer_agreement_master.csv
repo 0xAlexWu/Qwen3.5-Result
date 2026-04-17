@@ -1,0 +1,6 @@
+﻿dataset,n_rows,raw_agreement_faithfulness,raw_agreement_unsupported_fact,raw_agreement_omission,raw_agreement_context_leakage,raw_agreement_decision,kappa_faithfulness,kappa_unsupported_fact,kappa_omission,kappa_context_leakage,kappa_decision,weighted_kappa_naturalness,adjudication_needed_count,adjudication_needed_rate
+synthea,14,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,0.478,0,0.000
+official,16,0.750,0.250,0.562,0.875,0.125,0.000,0.000,0.000,0.600,0.000,0.778,14,0.875
+nhanes,20,1.000,1.000,1.000,1.000,0.700,1.000,1.000,1.000,1.000,0.000,0.000,6,0.300
+gpt_expanded,49,1.000,0.959,0.939,0.755,0.122,1.000,0.000,0.000,0.109,0.000,0.018,43,0.878
+mimic_eicu,14,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,0.857,0,0.000
