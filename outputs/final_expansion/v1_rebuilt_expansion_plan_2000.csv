@@ -1,0 +1,6 @@
+dataset,source_pool_used,use_now_rows_used,unreviewed_clean_candidate_rows_used,promoted_use_after_revision_rows_used,excluded_rows_ignored,target_final_pair_count,final_pair_count,rationale
+synthea,finalized use_now plus finalized unreviewed_clean_candidate rows,14,331,0,0,1240,1240,"Majority backbone source using the broad clean finalized paired pool, including Synthea Observations."
+official,finalized unreviewed_clean_candidate anchor rows,0,8,0,14,120,120,Non-zero high-fidelity anchor subset from clean finalized Official rows; excluded and revision-risk Official rows remain held out.
+nhanes,"finalized use_now plus unreviewed_clean_candidate rows, plus six promoted Patient disposition-only rows",14,10,6,0,430,430,Moderate semi-structured realism subset with Observation-strong allocation and explicit conservative NHANES Patient promotions.
+gpt_expanded,finalized use_now plus finalized unreviewed_clean_candidate rows,5,15,0,14,196,196,Capped auxiliary diversity source below 10%; no GPT revision rows were promoted.
+mimic_eicu,"14 mandatory demo_only low-weight Observation rows with review final_decision=keep, retained as realism stress only",0,0,0,0,14,14,Mandatory tiny realism-stress subset. Rows remain tagged demo_only_low_weight and are not used as backbone training data.

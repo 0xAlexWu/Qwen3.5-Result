@@ -1,0 +1,8 @@
+input_style,row_count,percentage
+brief_clinical_narrative,1,0.05%
+brief_factual_note,379,18.95%
+compact_clinical,642,32.10%
+concise_clinical,256,12.80%
+patient_utterance,8,0.40%
+semi_structured,617,30.85%
+shorthand_note,97,4.85%

@@ -1,0 +1,6 @@
+dataset,row_count,percentage,observation_count,patient_count,condition_count
+synthea,1240,62.00%,970,126,144
+official,120,6.00%,75,30,15
+nhanes,430,21.50%,290,140,0
+gpt_expanded,196,9.80%,20,60,116
+mimic_eicu,14,0.70%,14,0,0
