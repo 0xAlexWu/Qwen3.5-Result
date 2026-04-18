@@ -1,0 +1,6 @@
+source_dataset,n,json_validity_rate,resource_type_match_rate,exact_string_match_rate,observation_value_exact_match_rate,observation_unit_exact_match_rate
+gpt_expanded,39,0.8461538461538461,0.8461538461538461,0.8461538461538461,1.0,1.0
+mimic_eicu,3,1.0,1.0,0.6666666666666666,1.0,0.6666666666666666
+nhanes,86,1.0,1.0,0.9418604651162791,1.0,1.0
+official,24,1.0,1.0,0.875,1.0,0.9444444444444444
+synthea,248,0.7217741935483871,0.7217741935483871,0.18951612903225806,1.0,1.0
