@@ -1,0 +1,4 @@
+split,n,json_validity_rate,resource_type_match_rate,exact_string_match_rate,observation_value_exact_match_rate,observation_unit_exact_match_rate
+final_val,200,0.835,0.835,0.28,1.0,0.984375
+test,101,0.7425742574257426,0.7425742574257426,0.27722772277227725,1.0,1.0
+robustness,99,0.8383838383838383,0.8383838383838383,0.31313131313131315,1.0,0.9830508474576272
