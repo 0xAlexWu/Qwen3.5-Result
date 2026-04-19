@@ -1,0 +1,4 @@
+split,n_08b,json_validity_rate_08b,resource_type_match_rate_08b,exact_string_match_rate_08b,observation_value_exact_match_rate_08b,observation_unit_exact_match_rate_08b,n_2b,json_validity_rate_2b,resource_type_match_rate_2b,exact_string_match_rate_2b,observation_value_exact_match_rate_2b,observation_unit_exact_match_rate_2b
+final_val,200,0.835,0.835,0.445,1.0,0.9921875,200,0.835,0.835,0.28,1.0,0.984375
+test,101,0.7425742574257426,0.7425742574257426,0.4851485148514851,1.0,1.0,101,0.7425742574257426,0.7425742574257426,0.2772277227722772,1.0,1.0
+robustness,99,0.8383838383838383,0.8383838383838383,0.4646464646464646,1.0,0.9830508474576272,99,0.8383838383838383,0.8383838383838383,0.3131313131313131,1.0,0.9830508474576272

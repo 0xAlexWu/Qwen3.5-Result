@@ -1,0 +1,4 @@
+resource_type,n_08b,json_validity_rate_08b,resource_type_match_rate_08b,exact_string_match_rate_08b,observation_value_exact_match_rate_08b,observation_unit_exact_match_rate_08b,n_2b,json_validity_rate_2b,resource_type_match_rate_2b,exact_string_match_rate_2b,observation_value_exact_match_rate_2b,observation_unit_exact_match_rate_2b
+Condition,45,1.0,1.0,0.5111111111111111,,,45,1.0,1.0,0.1333333333333333,,
+Observation,277,0.8772563176895307,0.8772563176895307,0.4657039711191336,1.0,0.9917695473251028,277,0.8772563176895307,0.8772563176895307,0.2815884476534296,1.0,0.9876543209876544
+Patient,78,0.4743589743589743,0.4743589743589743,0.4102564102564102,,,78,0.4743589743589743,0.4743589743589743,0.3974358974358974,,
