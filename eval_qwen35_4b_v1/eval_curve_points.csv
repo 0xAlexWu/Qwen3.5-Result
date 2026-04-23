@@ -1,0 +1,2 @@
+step,eval_loss,eval_token_accuracy
+100,0.03155,0.9907
