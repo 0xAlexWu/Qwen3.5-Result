@@ -1,3 +1,0 @@
-step,eval_loss,eval_token_accuracy,model
-100,0.04597,0.9871,Qwen 0.8B
-100,0.03155,0.9907,Qwen 4B
