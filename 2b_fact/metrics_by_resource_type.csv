@@ -1,0 +1,4 @@
+resource_type,n,json_validity_rate,resource_type_match_rate,exact_string_match_rate,observation_value_exact_match_rate,observation_unit_exact_match_rate
+Condition,45,1.0,1.0,0.06666666666666667,,
+Observation,277,0.8772563176895307,0.8772563176895307,0.16967509025270758,1.0,0.9259259259259259
+Patient,78,0.38461538461538464,0.38461538461538464,0.32051282051282054,,
