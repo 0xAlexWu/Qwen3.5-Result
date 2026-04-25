@@ -1,0 +1,7 @@
+model,split,composite_quality_score
+Qwen 0.8B Pre,final_val,0.24375
+Qwen 0.8B Pre,test,0.23514851485148514
+Qwen 0.8B Pre,robustness,0.24494949494949492
+Qwen 0.8B Post,final_val,0.7777734374999999
+Qwen 0.8B Post,test,0.7425742574257426
+Qwen 0.8B Post,robustness,0.7832348912857388
