@@ -1,0 +1,7 @@
+split,n,json_validity_rate,resource_type_match_rate,exact_string_match_rate,observation_value_exact_match_rate,observation_unit_exact_match_rate,model
+final_val,200,0.715,0.26,0.0,0.0,0.0,Qwen 0.8B Pre
+test,101,0.7128712871287128,0.2277227722772277,0.0,0.0,0.0,Qwen 0.8B Pre
+robustness,99,0.7676767676767676,0.2121212121212121,0.0,0.0,0.0,Qwen 0.8B Pre
+final_val,200,0.835,0.835,0.445,1.0,0.9921875,Qwen 0.8B Post
+test,101,0.7425742574257426,0.7425742574257426,0.4851485148514851,1.0,1.0,Qwen 0.8B Post
+robustness,99,0.8383838383838383,0.8383838383838383,0.4646464646464646,1.0,0.9830508474576272,Qwen 0.8B Post
